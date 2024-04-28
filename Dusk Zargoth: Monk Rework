@@ -12,25 +12,9 @@
 					"Dusk Zargoth"
 				],
 				"version": "3.0.1",
-				"color": "316167",
-				"url": "https://www.gmbinder.com/share/-MhGHvc1sNLoUrISINrV",
-				"targetSchema": "1.2"
-			},
-			{
-				"json": "LLAM:E",
-				"abbreviation": "LLAM:E",
-				"full": "Alternate Monk Expanded",
-				"authors": [
-					"LaserLlama"
-				],
-				"convertedBy": [
-					"Lxran#2292",
-					"Dazzle#9021"
-				],
-				"version": "3.0.1",
-				"color": "316167",
-				"url": "https://www.gmbinder.com/share/-MyVERQKKbawlJLVjpyo",
-				"targetSchema": "1.2"
+				"color": "#DC3636",
+				"url": "https://homebrewery.naturalcrit.com/share/HJys_qVgDJdo",
+				"targetSchema": "2.0"
 			}
 		],
 		"dateAdded": 1649140894,
