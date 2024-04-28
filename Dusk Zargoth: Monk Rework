@@ -662,6 +662,47 @@
 						},
 					]
 				},
+				{
+					"type": "entries",
+					"name": "Weapon Style",
+					"page": 3,
+					"entries": [
+						"Not only are you capable of wielding a larger variety of weapons, but you can use it in a more defensive style. Your monk weapons are longbows and any weapon that doesn't have the two-handed, heavy, or special property.",
+						{
+							"type": "list",
+							"items": [
+								{
+									"type": "entries",
+									"name": "Monk Weapon Mastery",
+									"entries": [
+										"You can roll your Martial Arts die in place of the normal damage of your monk weapons."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Embracing Branch",
+									"entries": [
+										"When a creature you can see attacks a target within 5 feet from you, you can use your reaction to interpose between them a monk weapon you're wielding, imposing disadvantage on the attack roll."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Returning Guard (9th level)",
+									"entries": [
+										"When you make an attack with a monk weapon on your turn, you can use a monk weapon you are holding to protect yourself against the next attack you can see that targets you before the start of your next turn. When you do so, roll your Martial Arts die and add it to your AC against that attack."
+									]
+								},
+								{
+									"type": "entries",
+									"name": "Passive Blockade (18th level)",
+									"entries": [
+										"While holding a monk weapon, the next attack made against you before the start of your next turn has disadvantage."
+									]
+								},
+							]
+						},
+					]
+				},
 			]
 		},
 		{
