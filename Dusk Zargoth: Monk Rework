@@ -22,24 +22,29 @@
 	},
 	"class": [
 		{
-			"name": "Alternate Monk",
-			"source": "LLAM",
+			"name": "Monk Rework",
+			"source": "DZC",
 			"page": 1,
 			"hd": {
-				"faces": 10,
-				"number": 1
+				"number": 1,
+				"faces": 8
 			},
 			"proficiency": [
 				"str",
 				"dex"
 			],
 			"startingProficiencies": {
+				"armor": [
+					"Unarmored defense (Wisdom)",
+					"light armor",
+					"medium armor"
+				],
 				"weapons": [
 					"simple",
 					"{@item shortsword|phb|shortswords}"
 				],
 				"tools": [
-					"a set of {@item artisan's tools|phb} or a {@item musical instrument|phb}"
+					"Choose one type of {@item artisan's tools|phb} or one {@item musical instrument|phb}"
 				],
 				"skills": [
 					{
@@ -49,7 +54,6 @@
 								"athletics",
 								"history",
 								"ınsight",
-								"nature",
 								"religion",
 								"stealth"
 							],
@@ -62,9 +66,8 @@
 				"additionalFromBackground": true,
 				"default": [
 					"(a) a {@item shortsword|phb} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
-					"(a) a {@item shortbow|phb} and {@item arrows (20)|phb|20 arrows} or (b) {@item dart|phb|20 darts}",
-					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}",
-					"(a) a {@item holy symbol|phb} or (b) a {@item musical instrument|phb}"
+					"(a) {@item dart|phb|10 darts} or (b) a {@item shortbow|phb} and {@item arrows (20)|phb|20 arrows}",
+					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}"
 				],
 				"defaultData": [
 					{
@@ -79,14 +82,14 @@
 					},
 					{
 						"a": [
-							"shortbow|phb",
-							"arrows (20)|phb"
-						],
-						"b": [
 							{
 								"item": "dart|phb",
-								"quantity": 20
+								"quantity": 10
 							}
+						],
+						"b": [
+							"shortbow|phb",
+							"arrows (20)|phb"
 						]
 					},
 					{
@@ -96,22 +99,14 @@
 						"b": [
 							"explorer's pack|phb"
 						]
-					},
-					{
-						"a": [
-							"holy symbol|phb"
-						],
-						"b": [
-							"musical instrument|phb"
-						]
 					}
 				]
 			},
 			"optionalfeatureProgression": [
 				{
-					"name": "Techniques",
+					"name": "Ki Features",
 					"featureType": [
-						"LLAM:T"
+						"DZ:KF"
 					],
 					"progression": [
 						0,
@@ -142,7 +137,7 @@
 					"colLabels": [
 						"Martial Arts",
 						"Unarmored Movement",
-						"Techniques Known"
+						"Ki Features"
 					],
 					"rows": [
 						[
@@ -215,13 +210,13 @@
 								"toRoll": [
 									{
 										"number": 1,
-										"faces": 8
+										"faces": 6
 									}
 								]
 							},
 							{
 								"type": "bonusSpeed",
-								"value": 10
+								"value": 15
 							},
 							4
 						],
@@ -269,7 +264,7 @@
 							},
 							{
 								"type": "bonusSpeed",
-								"value": 15
+								"value": 20
 							},
 							5
 						],
@@ -285,7 +280,7 @@
 							},
 							{
 								"type": "bonusSpeed",
-								"value": 15
+								"value": 20
 							},
 							6
 						],
@@ -317,7 +312,7 @@
 							},
 							{
 								"type": "bonusSpeed",
-								"value": 20
+								"value": 25
 							},
 							7
 						],
@@ -333,25 +328,9 @@
 							},
 							{
 								"type": "bonusSpeed",
-								"value": 20
+								"value": 25
 							},
 							7
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 10
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 20
-							},
-							8
 						],
 						[
 							{
@@ -381,9 +360,9 @@
 							},
 							{
 								"type": "bonusSpeed",
-								"value": 25
+								"value": 30
 							},
-							9
+							8
 						],
 						[
 							{
@@ -397,23 +376,7 @@
 							},
 							{
 								"type": "bonusSpeed",
-								"value": 25
-							},
-							9
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 12
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 25
+								"value": 30
 							},
 							9
 						],
@@ -431,6 +394,38 @@
 								"type": "bonusSpeed",
 								"value": 30
 							},
+							9
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 35
+							},
+							9
+						],
+						[
+							{
+								"type": "dice",
+								"toRoll": [
+									{
+										"number": 1,
+										"faces": 12
+									}
+								]
+							},
+							{
+								"type": "bonusSpeed",
+								"value": 35
+							},
 							10
 						],
 						[
@@ -445,7 +440,7 @@
 							},
 							{
 								"type": "bonusSpeed",
-								"value": 30
+								"value": 35
 							},
 							10
 						],
@@ -461,7 +456,7 @@
 							},
 							{
 								"type": "bonusSpeed",
-								"value": 30
+								"value": 35
 							},
 							10
 						]
@@ -469,41 +464,43 @@
 				}
 			],
 			"classFeatures": [
-				"Martial Arts|Alternate Monk|LLAM|1",
-				"Unarmored Defense|Alternate Monk|LLAM|1",
-				"Ki|Alternate Monk|LLAM|2",
-				"Flurry of Blows|Alternate Monk|LLAM|2",
-				"Unarmored Movement|Alternate Monk|LLAM|2",
+				"Martial Arts|Monk Rework|DZ|1",
+				"Meditation|Monk Rework|DZ|1",
+				"Ki|Monk Rework|DZ|2",
+				"Unarmored Movement|Monk Rework|DZ|2",
 				{
-					"classFeature": "Monastic Tradition|Alternate Monk|LLAM|3",
+					"classFeature": "Monastic Tradition|Monk Rework|DZ|3",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Alternate Monk|LLAM|4",
-				"Extra Attack|Alternate Monk|LLAM|5",
-				"Enlightened Fist|Alternate Monk|LLAM|6",
+				"Ability Score Improvement|Monk Rework|DZ|4",
+				"Extra Attack|Monk Rework|DZ|5",
+				"Ki-Empowered Strikes|Monk Rework|DZ|5",
+				"Ability Score Improvement|Monk Rework|DZ|4",
 				{
-					"classFeature": "Monastic Tradition Feature|Alternate Monk|LLAM|6",
+					"classFeature": "Monastic Tradition feature|Monk Rework|DZ|6",
 					"gainSubclassFeature": true
 				},
-				"Evasion|Alternate Monk|LLAM|7",
-				"Ability Score Improvement|Alternate Monk|LLAM|8",
-				"Spirit of Tranquility|Alternate Monk|LLAM|9",
+				"Meditation improvement|Monk Rework|DZ|7",
+				"Ability Score Improvement|Monk Rework|DZ|8",
+				"Martial Arts improvement|Monk Rework|DZ|9",
+				"Ability Score Improvement|Monk Rework|DZ|10",
 				{
-					"classFeature": "Monastic Tradition Feature|Alternate Monk|LLAM|10",
+					"classFeature": "Monastic Tradition feature|Monk Rework|DZ|11",
 					"gainSubclassFeature": true
 				},
-				"Ki Adept|Alternate Monk|LLAM|11",
-				"Ability Score Improvement|Alternate Monk|LLAM|12",
-				"Purity of Body|Alternate Monk|LLAM|13",
-				"Purity of Mind|Alternate Monk|LLAM|14",
-				"Timeless Body|Alternate Monk|LLAM|15",
-				"Ability Score Improvement|Alternate Monk|LLAM|16",
+				"Ability Score Improvement|Monk Rework|DZ|12",
+				"Timeless Body|Monk Rework|DZ|13",
+				"Unrelenting Soul|Monk Rework|DZ|14",
+				"Extra Attack (2)|Monk Rework|DZ|15",
+				"Ability Score Improvement|Monk Rework|DZ|16",
 				{
-					"classFeature": "Monastic Tradition Feature|Alternate Monk|LLAM|17",
+					"classFeature": "Monastic Tradition feature|Monk Rework|DZ|17",
 					"gainSubclassFeature": true
 				},
-				"Ability Score Improvement|Alternate Monk|LLAM|19",
-				"Purity of Spirit|Alternate Monk|LLAM|20"
+				"Martial Arts improvement|Monk Rework|DZ|18",
+				"Quickened Recovery|Monk Rework|DZ|19",
+				"Ability Score Improvement|Monk Rework|DZ|20",
+				"Perfect Self|Monk Rework|DZ|20"
 			],
 			"subclassTitle": "Monastic Tradition",
 			"multiclassing": {
