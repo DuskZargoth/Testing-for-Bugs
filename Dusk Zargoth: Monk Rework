@@ -19,28 +19,6 @@
 		],
 		"dateAdded": 1649140894,
 		"dateLastModified": 1713958692,
-		"optionalFeatureTypes": {
-			"LLAM:T": "Alternate Monk; Techniques",
-			"LLAM:T:B": "Alternate Monk; Techniques; Boulder",
-			"LLAM:T:DF": "Alternate Monk; Techniques; Drunken Fist",
-			"LLAM:T:Fe": "Alternate Monk; Techniques; Ferocity",
-			"LLAM:T:Fl": "Alternate Monk; Techniques; Flowing River",
-			"LLAM:T:H": "Alternate Monk; Techniques; Hurricane",
-			"LLAM:T:OH": "Alternate Monk; Techniques; Open Hand",
-			"LLAM:T:Ra": "Alternate Monk; Techniques; Radiance",
-			"LLAM:T:Re": "Alternate Monk; Techniques; Reaper",
-			"LLAM:T:SA": "Alternate Monk; Techniques; Shadow Arts",
-			"LLAM:T:SI": "Alternate Monk; Techniques; Sacred Inks",
-			"LLAM:T:Vi": "Alternate Monk; Techniques; Vigilante",
-			"LLAM:T:Vo": "Alternate Monk; Techniques; Void",
-			"LLAM:T:Wx": "Alternate Monk; Techniques; Wuxia",
-			"LLAM:T:YY": "Alternate Monk; Techniques; Yin and Yang",
-			"LLAM:T:AW": "Alternate Monk; Techniques; Astral Warrior",
-			"LLAM:T:RD": "Alternate Monk; Techniques; Rising Dragon",
-			"FS:AM": "Fighting Style; Alternate Monk",
-			"LL:SE": "Savage Exploit"
-		},
-		"_dateLastModifiedHash": "eb075412a6"
 	},
 	"class": [
 		{
