@@ -1,1751 +1,1625 @@
 {
-	"_meta": {
-		"sources": [
-			{
-				"json": "DZ",
-				"abbreviation": "DZ",
-				"full": "Monk Rework",
-				"authors": [
-					"Dusk Zargoth"
-				],
-				"convertedBy": [
-					"Dusk Zargoth"
-				],
-				"version": "3.0.1",
-				"color": "#DC3636",
-				"url": "https://homebrewery.naturalcrit.com/share/HJys_qVgDJdo",
-				"targetSchema": "2.0"
-			}
-		],
-		"dateAdded": 1714358643,
-		"dateLastModified": 1714358643,
-		"optionalFeatureTypes": {
-			"DZC:KF": "Monk Rework; Ki Features",
-			"DZC:KF:O": "Monk Rework; Ki Features; Offense",
-			"DZC:KF:D": "Monk Rework; Ki Features; Defense",
-			"DZC:KF:U": "Monk Rework; Ki Features; Utility"
-
-		}
-	},
-
-	"class": [
-		{
-			"name": "Monk Rework",
-			"source": "DZC",
-			"page": 1,
-			"hd": {
-				"number": 1,
-				"faces": 8
-			},
-			"proficiency": [
-				"str",
-				"dex"
-			],
-			"startingProficiencies": {
-				"armor": [
-					"Unarmored defense (Wisdom)",
-					"light armor",
-					"medium armor"
-				],
-				"weapons": [
-					"simple",
-					"{@item shortsword|phb|shortswords}"
-				],
-				"tools": [
-					"Choose one type of {@item artisan's tools|phb} or one {@item musical instrument|phb}"
-				],
-				"skills": [
-					{
-						"choose": {
-							"from": [
-								"acrobatics",
-								"athletics",
-								"history",
-								"ınsight",
-								"religion",
-								"stealth"
-							],
-							"count": 2
-						}
-					}
-				]
-			},
-			"startingEquipment": {
-				"additionalFromBackground": true,
-				"default": [
-					"(a) a {@item shortsword|phb} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
-					"(a) {@item dart|phb|10 darts} or (b) a {@item shortbow|phb} and {@item arrows (20)|phb|20 arrows}",
-					"(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}"
-				],
-				"defaultData": [
-					{
-						"a": [
-							"shortsword|phb"
-						],
-						"b": [
-							{
-								"equipmentType": "weaponSimple"
-							}
-						]
-					},
-					{
-						"a": [
-							{
-								"item": "dart|phb",
-								"quantity": 10
-							}
-						],
-						"b": [
-							"shortbow|phb",
-							"arrows (20)|phb"
-						]
-					},
-					{
-						"a": [
-							"dungeoneer's pack|phb"
-						],
-						"b": [
-							"explorer's pack|phb"
-						]
-					}
-				]
-			},
-			
-			"optionalfeatureProgression": [
-				{
-					"name": "Ki Features",
-					"featureType": [
-						"DZC:KF"
-					],
-					"progression": [
-						0,
-						3,
-						3,
-						3,
-						4,
-						4,
-						5,
-						5,
-						6,
-						6,
-						7,
-						7,
-						8,
-						8,
-						9,
-						9,
-						9,
-						10,
-						10,
-						10
-					]
-				}
-			],
-			"classTableGroups": [
-				{
-					"colLabels": [
-						"Martial Arts",
-						"Unarmored Movement",
-						"Ki Features"
-					],
-					"rows": [
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 6
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 0
-							},
-							0
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 6
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 10
-							},
-							3
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 6
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 10
-							},
-							3
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 6
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 10
-							},
-							3
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 6
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 15
-							},
-							4
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 8
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 15
-							},
-							4
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 8
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 15
-							},
-							5
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 8
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 20
-							},
-							5
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 8
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 20
-							},
-							6
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 8
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 20
-							},
-							6
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 10
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 25
-							},
-							7
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 10
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 25
-							},
-							7
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 10
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 25
-							},
-							8
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 10
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 30
-							},
-							8
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 10
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 30
-							},
-							9
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 12
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 30
-							},
-							9
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 12
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 35
-							},
-							9
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 12
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 35
-							},
-							10
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 12
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 35
-							},
-							10
-						],
-						[
-							{
-								"type": "dice",
-								"toRoll": [
-									{
-										"number": 1,
-										"faces": 12
-									}
-								]
-							},
-							{
-								"type": "bonusSpeed",
-								"value": 35
-							},
-							10
-						]
-					]
-				}
-			],
-			"classFeatures": [
-				"Martial Arts|Monk Rework|DZC|1",
-				"Meditation|Monk Rework|DZC|1",
-				"Ki|Monk Rework|DZC|2",
-				"Unarmored Movement|Monk Rework|DZC|2",
-				{
-					"classFeature": "Monastic Tradition|Monk Rework|DZC|3",
-					"gainSubclassFeature": true
-				},
-				"Ability Score Improvement|Monk Rework|DZC|4",
-				"Extra Attack|Monk Rework|DZC|5",
-				"Ki-Empowered Strikes|Monk Rework|DZC|5",
-				"Ability Score Improvement|Monk Rework|DZC|4",
-				{
-					"classFeature": "Monastic Tradition feature|Monk Rework|DZC|6",
-					"gainSubclassFeature": true
-				},
-				"Meditation improvement|Monk Rework|DZC|7",
-				"Ability Score Improvement|Monk Rework|DZC|8",
-				"Martial Arts improvement|Monk Rework|DZC|9",
-				"Ability Score Improvement|Monk Rework|DZC|10",
-				{
-					"classFeature": "Monastic Tradition feature|Monk Rework|DZC|11",
-					"gainSubclassFeature": true
-				},
-				"Ability Score Improvement|Monk Rework|DZC|12",
-				"Timeless Body|Monk Rework|DZC|13",
-				"Unrelenting Soul|Monk Rework|DZC|14",
-				"Extra Attack (2)|Monk Rework|DZC|15",
-				"Ability Score Improvement|Monk Rework|DZC|16",
-				{
-					"classFeature": "Monastic Tradition feature|Monk Rework|DZC|17",
-					"gainSubclassFeature": true
-				},
-				"Martial Arts improvement|Monk Rework|DZC|18",
-				"Quickened Recovery|Monk Rework|DZC|19",
-				"Ability Score Improvement|Monk Rework|DZC|20",
-				"Perfect Self|Monk Rework|DZC|20"
-			],
-			"subclassTitle": "Monastic Tradition",
-			"multiclassing": {
-				"requirements": {
-					"dex": 13,
-					"wis": 13
-				},
-				"proficienciesGained": {
-					"weapons": [
-						"simple",
-						"{@item shortsword|phb|shortswords}"
-					]
-				}
-			},
-			"hasFluff": true
-		}
-	],
-
-	"classFeature": [
-		{
-			"name": "Martial Arts",
-			"source": "DZC",
-			"foundryImg": "icons/skills/melee/unarmed-punch-fist-blue.webp",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"page": 3,
-			"level": 1,
-			"entries": [
-				"At 1st level, your are adept at a combat style focused on hand to hand combat and the use of monk weapons, represented by a special die called Martial Arts die, as shown in the Martial
-				Arts column of the Monk table.",
-
-				"While all martial arts share some principles, each monk adapts them to better suit themselves, thus specializing in one Martial Arts Style or combining them to create their own.
-				Each syle is described below and each one defines what are considered as your monk weapons.",
-
-				"You learn two features of your choice from any style. When you reach 9th and 18th level in this class, you learn an additional feature of your choice from any style. If a style
-				feature requires a level, you must meet that level in this class to learn it.",
-
-				"You lose the benefits of your Martial Arts if you are wielding a non-monk weapon or wearing heavy armor.",
-				{
-					"type": "entries",
-					"name": "Mixed Style",
-					"page": 3,
-					"entries": [
-						"A balanced style taught to beginners so that they can adapt to any situation. Your monk weapons are any simple melee weapon that doesn't have the two-handed or heavy
-						property.",
-						{
-							"type": "list",
-							"items": [
-								{
-									"type": "entries",
-									"name": "Chain Attack",
-									"entries": [
-										"When you take the Attack action on your turn, you can use your bonus action to either make one attack with an unarmed strike or monk weapon you're wielding, or attempt a grapple or shove check."
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Ground Fighting",
-									"entries": [
-										"Creatures don't have advantage on attack rolls against you for being prone."
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Push Back (9th level)",
-									"entries": [
-										"If a creature misses you with an attack, you can attempt to push it as a reaction."
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Set Up (18th level)",
-									"entries": [
-										"On your turn, when you take an action that requires ki points, you can use your bonus action to either make one attack with an unarmed strike or monk weapon you're wielding, or attempt a grapple or shove check."
-									]
-								},
-							]
-						},
-					]
-				},
-
-				{
-					"type": "entries",
-					"name": "Grappling Style",
-					"page": 3,
-					"entries": [
-						"You trained to control the weight of your opponents with your own, crushing them in the process. Your monk weapons are any simple melee weapon that doesn't have the two-handed or heavy property.",
-						{
-							"type": "list",
-							"items": [
-								{
-									"type": "entries",
-									"name": "Wrestling Mastery",
-									"entries": [
-										"If you succeed on a grapple or shove check, you can deal bludgeoning damage to the target equal to one roll of your Martial Arts die + your Strength modifier."
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Ground Hold",
-									"entries": [
-										"You can grapple a creature with both of your legs. To do so, either you or the creature must be prone. If the target is prone, you must also sit on top of them."
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Dynamic Hold (9th level)",
-									"entries": [
-										"Creatures grappled by you have disadvantage on skill checks made to escape your grapples or to shove you."
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Lock (18th level)",
-									"entries": [
-										"A creature grappled by you takes a penalty to its attack rolls equal to your Strength modifier."
-									]
-								},
-							]
-						},
-					]
-				},
-
-				{
-					"type": "entries",
-					"name": "Unarmed Style",
-					"page": 3,
-					"entries": [
-						"You conditioned your body to throw swift and precise unarmed strikes, which can carry a lot of power. Your monk weapons are shortswords and any simple melee weapon that doesn't have the two-handed or heavy property.",
-						{
-							"type": "list",
-							"items": [
-								{
-									"type": "entries",
-									"name": "Unarmed Mastery",
-									"entries": [
-										"You can roll your Martial Arts die in place of the normal damage of your unarmed strikes."
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Vital's Hit",
-									"entries": [
-										"Before you make an unarmed strike, you can take a -5 penalty to the attack roll. If the attack hits, you gain a bonus to the damage roll equal to one roll of your Martial Arts die + your Wisdom modifier."
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Potent Strike (9th level)",
-									"entries": [
-										"Once on your turn, you can give yourself advantage on an attack roll you make with an unarmed strike."
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Fake Strike (18th level)",
-									"entries": [
-										"Once on your turn, if you miss an attack roll with an unarmed strike, you can reroll it."
-									]
-								},
-							]
-						},
-					]
-				},
-
-				{
-					"type": "entries",
-					"name": "Weapon Style",
-					"page": 3,
-					"entries": [
-						"Not only are you capable of wielding a larger variety of weapons, but you can use it in a more defensive style. Your monk weapons are longbows and any weapon that doesn't have the two-handed, heavy, or special property.",
-						{
-							"type": "list",
-							"items": [
-								{
-									"type": "entries",
-									"name": "Monk Weapon Mastery",
-									"entries": [
-										"You can roll your Martial Arts die in place of the normal damage of your monk weapons."
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Embracing Branch",
-									"entries": [
-										"When a creature you can see attacks a target within 5 feet from you, you can use your reaction to interpose between them a monk weapon you're wielding, imposing disadvantage on the attack roll."
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Returning Guard (9th level)",
-									"entries": [
-										"When you make an attack with a monk weapon on your turn, you can use a monk weapon you are holding to protect yourself against the next attack you can see that targets you before the start of your next turn. When you do so, roll your Martial Arts die and add it to your AC against that attack."
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Passive Blockade (18th level)",
-									"entries": [
-										"While holding a monk weapon, the next attack made against you before the start of your next turn has disadvantage."
-									]
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-
-		{
-			"name": "Meditation",
-			"source": "DZC",
-			"foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"page": 3,
-			"level": 1,
-			"entries": [
-				"At 1st level, you know how to block your senses from the external world, entering a state of absolute focus, called meditation. While in this state you remain motionless and unconscious, and the only action you can take is to awaken yourself from it. Your meditation ends if you take damage or another creature uses its action to reach and awaken you.",
-
-				"With uninterrupted meditation you can finish a short or long rest in half the time, and gain the same benefits of 8 hours of sleep in 4 hours.",
-
-				"Starting at 7th level, you're no longer rendered unconscious while meditating, and you can see and hear as normal."
-			]
-		},
-
-		{
-			"name": "Ki",
-			"source": "DZC",
-			"foundryImg": "icons/magic/symbols/runes-star-pentagon-blue.webp",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"page": 3,
-			"level": 2,
-			"entries": [
-				"Starting at 2nd level, you have reached the stage in which you can harness the mystic energy of ki, which can be used to perform superhuman feats through a variety of techniques.",
-				{
-					"type": "entries",
-					"name": "Ki Points",
-					"page": 3,
-					"entries": [
-						"Your access to this energy is represented by a number of ki points. You have an amount of ki points equal to your monk level + your Wisdom modifier, unless that modifier is negative. You regain all expended ki points when you use your meditation to finish a short or long rest.",
-
-						"Whenever you gain a level in this class, you can choose one of the ki features you know and replace it with another one that you could learn at that level."
-					]
-				},
-
-				{
-					"type": "entries",
-					"name": "Ki Features",
-					"page": 4,
-					"entries": [
-						"Your ki fuels various techniques called Ki Features, each detailed in the Ki Features section of this class. The number of ki features you know is shown in the Ki Features column of the Monk table.",
-
-						"Whenever you gain a level in this class, you can choose one of the ki features you know and replace it with another one that you could learn at that level."
-					]
-				},
-
-				{
-					"type": "entries",
-					"name": "Ki Saving Throws",
-					"page": 4,
-					"entries": [
-						"Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:",
-						{
-							"type": "abilityDc",
-							"name": "Ki",
-							"attributes": [
-								"wis"
-							]
-						}
-					]
-				},
-
-				{
-					"type": "entries",
-					"name": "Ki Rules and Restrictions",
-					"page": 4,
-					"entries": [
-						"Some subclass features use ki to fuel an ability, these count as Ki Features for the purpose of this section.",
-
-						"When a Ki Feature uses one of your Ability modifiers for calculation, the minimum modifier you can use is 1.",
-
-						"You can't use ki and lose the benefits of any Ki Feature you have active if you are wielding a non-monk weapon or wearing heavy armor, if you are unconscious, or dead.",
-
-						"Some of your Ki Features allow you to cast spells. To cast one of these spells, you use its casting time and other rules, but you don't need to provide material components for it. Wisdom is your spellcasting ability for spells cast in this way.",
-					]
-				}
-			]
-		},
-
-		{
-			"name": "Unarmored Movement",
-			"source": "DZC",
-			"foundryImg": "icons/skills/movement/feet-winged-sandals-tan.webp",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"page": 4,
-			"level": 2,
-			"foundrySystem": {
-				"effects": [
-					{
-						"name": "Unarmored Movement",
-						"changes": [
-							"if": {
-								@classes.monk-rework.levels<20
-							},
-							"then": [
-								{
-									"key": "data.attributes.movement.walk",
-									"mode": "ADD",
-									"value": "sign(@attributes.movement.walk) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5)"
-								},
-								{
-									"key": "data.attributes.movement.burrow",
-									"mode": "ADD",
-									"value": "sign(@attributes.movement.burrow) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5)"
-								},
-								{
-									"key": "data.attributes.movement.climb",
-									"mode": "ADD",
-									"value": "sign(@attributes.movement.climb) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5)"
-								},
-								{
-									"key": "data.attributes.movement.fly",
-									"mode": "ADD",
-									"value": "sign(@attributes.movement.fly) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5)"
-								},
-								{
-									"key": "data.attributes.movement.swim",
-									"mode": "ADD",
-									"value": "sign(@attributes.movement.swim) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5)"
-								}
-							],
-
-							"else": [
-								{
-									"key": "data.attributes.movement.walk",
-									"mode": "ADD",
-									"value": "sign(@attributes.movement.walk) * (35)"
-								},
-								{
-									"key": "data.attributes.movement.burrow",
-									"mode": "ADD",
-									"value": "sign(@attributes.movement.burrow) * (35)"
-								},
-								{
-									"key": "data.attributes.movement.climb",
-									"mode": "ADD",
-									"value": "sign(@attributes.movement.climb) * (35)"
-								},
-								{
-									"key": "data.attributes.movement.fly",
-									"mode": "ADD",
-									"value": "sign(@attributes.movement.fly) * (35)"
-								},
-								{
-									"key": "data.attributes.movement.swim",
-									"mode": "ADD",
-									"value": "sign(@attributes.movement.swim) * (35)"
-								}
-							]
-						]
-					}
-				]
-			},
-			"entries": [
-				"Starting at 2nd level, you gain a bonus to your movement speed, as shown in the Unarmored Movement column of the Monk table. You lose this benefit if you lose the benefits of your Martial Arts.",
-			]
-		},
-
-		{
-			"name": "Monastic Tradition",
-			"source": "DZC",
-			"className": "Monk Rework",
-			"classSource": "DC",
-			"page": 4,
-			"level": 3,
-			"entries": [
-				"When you reach 3rd level, you commit yourself to a monastic tradition, all detailed at the end of the class description. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level."
-			]
-		},
-
-		{
-			"name": "Monastic Tradition feature",
-			"source": "DZC",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"page": 4,
-			"level": 6,
-			"entries": [
-				"At 6th level, you gain a feature granted by your Monastic Tradition."
-			]
-		},
-
-		{
-			"name": "Monastic Tradition feature",
-			"source": "DZC",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"page": 4,
-			"level": 11,
-			"entries": [
-				"At 11th level, you gain a feature granted by your Monastic Tradition."
-			]
-		},
-
-		{
-			"name": "Monastic Tradition feature",
-			"source": "DZC",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"page": 4,
-			"level": 17,
-			"entries": [
-				"At 17th level, you gain a feature granted by your Monastic Tradition."
-			]
-		},
-
-		{
-			"name": "Ability Score Improvement",
-			"source": "DZC",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"page": 4,
-			"level": 4,
-			"entries": [
-				"When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-			]
-		},
-
-		{
-			"name": "Ability Score Improvement",
-			"source": "DZC",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"page": 4,
-			"level": 6,
-			"entries": [
-				"When you reach 6th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-			]
-		},
-
-		{
-			"name": "Ability Score Improvement",
-			"source": "DZC",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"page": 4,
-			"level": 8,
-			"entries": [
-				"When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-			]
-		},
-
-		{
-			"name": "Ability Score Improvement",
-			"source": "DZC",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"page": 4,
-			"level": 10,
-			"entries": [
-				"When you reach 10th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-			]
-		},
-
-		{
-			"name": "Ability Score Improvement",
-			"source": "DZC",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"page": 4,
-			"level": 12,
-			"entries": [
-				"When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-			]
-		},
-
-		{
-			"name": "Ability Score Improvement",
-			"source": "DZC",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"page": 4,
-			"level": 16,
-			"entries": [
-				"When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-			]
-		},
-		
-		{
-			"name": "Ability Score Improvement",
-			"source": "DZC",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"page": 4,
-			"level": 20,
-			"entries": [
-				"When you reach 20th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-				
-				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
-			]
-		},
-
-		{
-			"name": "Extra Attack",
-			"source": "DZC",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp",
-			"page": 4,
-			"level": 5,
-			"entries": [
-				"Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn.",
-
-				"The number of attacks increases to three when you reach 15th level in this class."
-			]
-		},
-
-		{
-			"name": "Extra Attack (2)",
-			"source": "DZC",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp",
-			"page": 4,
-			"level": 15,
-			"entries": [
-				"At 15th level, you can attack three times whenever you take the {@action Attack} action on your turn.",
-			]
-		},
-
-		{
-			"name": "Ki-Empowered Strikes",
-			"source": "DZC",
-			"foundryImg": "icons/magic/symbols/runes-star-pentagon-orange.webp",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"page": 4,
-			"level": 5,
-			"entries": [
-				"Starting at 5th level, your attacks with unarmed strikes and monk weapons count as magical, as well as the damage of your grapples and shoves."
-			]
-		},
-
-		{
-			"name": "Timeless Body",
-			"source": "DZC",
-			"foundryImg": "icons/magic/unholy/orb-swirling-teal.webp",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"page": 4,
-			"level": 13,
-			"entries": [
-				"At 13th level, your ki sustains you so that you suffer none of the frailty of old age, and you can't be aged magically. However, you can still die of old age.",
-
-				"In addition, you can ignore your food and water requirements for a day if you spend it in uninterrupted medidtation. You can do so a number of times equal to your Wisdom modifier before you consume the amount of food and water your body needs to not suffer from exhaustion."
-			]
-		},
-
-		{
-			"name": "Unrelenting Soul",
-			"source": "DZC",
-			"foundryImg": "icons/magic/control/debuff-energy-hold-yellow.webp",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"page": 4,
-			"level": 14,
-			"entries": [
-				"Starting at 14th level, when you roll for initiative and have no ki points remaining, you regain 2 ki points. You also regain 1 ki point at the start of each of your turns during combat, unless you are unconscious."
-			]
-		},
-
-		{
-			"name": "Quickened Recovery",
-			"source": "DZC",
-			"foundryImg": "icons/magic/control/buff-strength-muscle-damage-orange.webp",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"page": 4,
-			"level": 19,
-			"entries": [
-				"Your mastery over your body protects you from physical ailments. Beginning at 9th level, you are immune to all disease and the poisoned condition.",
-
-				"Once you use this feature, you can't use it again until you finish a long rest."
-			]
-		},
-
-		{
-			"name": "Perfect Self",
-			"source": "DZC",
-			"foundryImg": "icons/magic/control/silhouette-hold-change-blue.webp",
-			"className": "Monk Rework",
-			"classSource": "DZC",
-			"page": 4,
-			"level": 20,
-			"entries": [
-				"At 20th level, you have cultivated your techniques to the point where they can never be mediocre. Choose one of the following type of rolls: saving throws, Athletics checks, attacks with unarmed strikes, or attacks with monk weapons. You can't roll below a 10 on the d20 against your will when you perform a die roll of the chosen type.",
-
-				"In addition, when you finish a long rest, you can choose one of the ki features you know and replace it with a different one."
-			]
-		}
-	],
-	"optionalfeature": [
-		{
-
-			"name": "Delaying Strike",
-			"source": "DZC",
-			"page": 11,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 1
-			},
-			"entries": [
-				"With one effective blow you can take the wind out of your foe. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a delaying strike. The target must succeed on a Wisdom saving throw or it can't take reactions until the start of your next turn."
-			],
-			"featureType": [
-				"DZC:KF:O"
-			]
-		},
-
-		{
-			"name": "Extension of Self",
-			"source": "DZC",
-			"page": 12,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 1
-			},
-			"featureType": [
-				"DZC:KF:O"
-			],
-			"entries": [
-				"When you make your first attack on your turn, you can spend 1 ki point to increase the distance of your attacks until the end of your turn. For the duration, you add 5 feet to your reach with melee weapon attacks and attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls."
-			]
-		},
-		
-		{
-			"name": "Flurry of Blows",
-			"source": "DZC",
-			"page": 12,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 1
-			},
-			"featureType": [
-				"DZC:KF:O"
-			],
-			"entries": [
-				"When you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action."
-			],
-			"prerequisite": [
-				{
-					"feature": [
-						"Unarmed Style feature: Unarmed Mastery"
-					]
-				}
-			]
-		},
-
-		{
-			"name": "Heavy Strike",
-			"source": "DZC",
-			"page": 12,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 1
-			},
-			"featureType": [
-				"DZC:KF:O"
-			],
-			"entries": [
-				"You can deal a massive blow to a creature that causes it to crush on its own weight. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a heavy strike. The target must succeed on a Dexterity saving throw or be knocked prone."
-			]
-		},
-
-		{
-			"name": "Pushing Strike",
-			"source": "DZC",
-			"page": 12,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 1
-			},
-			"featureType": [
-				"DZC:KF:O"
-			],
-			"entries": [
-				"With the storm by your side you can send creatures flying far away. When you hit with a melee weapon attack a creature no more than one size larger than you, you can spend 1 ki point to attempt a pushing strike. The target must succeed on a Strength saving throw or be pushed up to 15 feet away from you."
-			]
-		},
-
-		{
-			"name": "Strong Arm",
-			"source": "DZC",
-			"page": 12,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 1
-			},
-			"featureType": [
-				"DZC:KF:O"
-			],
-			"entries": [
-				"When a creature provokes an opportunity attack from you, you can spend 1 ki point as a reaction to attempt to grapple or shove it."
-			],
-			"prerequisite": [
-				{
-					"feature": [
-						"Grappling Style feature: Wrestling Mastery"
-					]
-				}
-			]
-		},
-
-		{
-			"name": "Concussive Strike",
-			"source": "DZC",
-			"page": 12,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 1
-			},
-			"featureType": [
-				"DZC:KF:O"
-			],
-			"entries": [
-				"You can turn a creature dizzy with a powerful strike. When you hit another creature with a melee weapon attack, you can spend 1 ki point to use a concussive hit. The creature takes a -2 penalty to skill checks and attack rolls until the start of your next turn.",
-
-				"A creature can't be affected by this ki feature more than once at the same time."
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 5,
-						"class": {
-							"name": "Monk Rework",
-							"source": "DZC",
-							"visible": true
-						}
-					}
-				}
-			]
-			
-		},
-
-		{
-			"name": "Deadly Precision",
-			"source": "DZC",
-			"page": 12,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 1
-			},
-			"featureType": [
-				"DZC:KF:O"
-			],
-			"entries": [
-				"Before you make an attack, you can spend 1 ki point to add one roll of your Martial Arts die to the attack or damage roll."
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 5,
-						"class": {
-							"name": "Monk Rework",
-							"source": "DZC",
-							"visible": true
-						}
-					}
-				}
-			],
-			"foundrySystem": {
-				"activation.type": "special",
-				"actionType": "other",
-				"formula": [
-					"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
-				]
-			},
-		},
-
-		{
-			"name": "Mighty Fists",
-			"source": "DZC",
-			"page": 12,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 1
-			},
-			"featureType": [
-				"DZC:KF:O"
-			],
-			"entries": [
-				"As a bonus action, you can spend 1 ki point to grant your unarmed strikes a +1 bonus to attack and damage rolls for 10 minutes. This benefit ends early if you are incapacitated."
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 5,
-						"class": {
-							"name": "Monk Rework",
-							"source": "DZC",
-							"visible": true
-						}
-					},
-					"feature": [
-						"Unarmed Style feature: Vital's Hit"
-					]
-				}
-			]
-			
-		},
-
-		{
-			"name": "Taunting Strike",
-			"source": "DZC",
-			"page": 12,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 1
-			},
-			"featureType": [
-				"DZC:KF:O"
-			],
-			"entries": [
-				"You can provoke a creature so it deems you as the only threat. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a taunting strike. The target must make a Wisdom saving throw. On a failed save, the creature can't target creatures other than you with attacks, spells, or any harmful ability until the start of your next turn. For the duration, creatures other than you have advantage on attack rolls against that creature."
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 5,
-						"class": {
-							"name": "Monk Rework",
-							"source": "DZC",
-							"visible": true
-						}
-					}
-				}
-			]
-			
-		},
-
-		{
-			"name": "Returning Attack",
-			"source": "DZC",
-			"page": 12,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 1
-			},
-			"featureType": [
-				"DZC:KF:O"
-			],
-			"entries": [
-				"If you use your Deflect Physical Attacks and reduce the damage to 0, you can spend 1 ki point to counter attack as part of the same reaction. If you do so, make a melee attack if the triggering attack was a melee attack, or a ranged attack using the weapon or piece of ammunition you just caught if it was a ranged attack.",
-
-				"You make the ranged attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack, which has a range of 20/60 feet."
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 5,
-						"class": {
-							"name": "Monk Rework",
-							"source": "DZC",
-							"visible": true
-						}
-					},
-					"feature": [
-						"Deflect Physical Attacks ki feature"
-					]
-				}
-			]
-			
-		},
-
-		{
-			"name": "Restraining Hand",
-			"source": "DZC",
-			"page": 12,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 1
-			},
-			"featureType": [
-				"DZC:KF:O"
-			],
-			"entries": [
-				"When you succeed on a grapple check against a creature, you can spend 1 ki point to lock the creature. The creature becomes restrained for the duration of the grapple."
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 5,
-						"class": {
-							"name": "Monk Rework",
-							"source": "DZC",
-							"visible": true
-						}
-					},
-					"feature": [
-						"Grappling Style feature: Ground Hold"
-					]
-				}
-			]
-			
-		},
-
-		{
-			"name": "Stunning Strike",
-			"source": "DZC",
-			"page": 12,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 1
-			},
-			"featureType": [
-				"DZC:KF:O"
-			],
-			"entries": [
-				"You can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be {@condition stunned} until the end of the creature's next turn."
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 5,
-						"class": {
-							"name": "Monk Rework",
-							"source": "DZC",
-							"visible": true
-						}
-					}
-				}
-			],
-			"foundrySystem": {
-				"activation.type": "special",
-				"activation.condition": "When you hit a creature with a melee weapon attack",
-				"actionType": "save",
-				"save.ability": "con",
-				"save.scaling": "wis"
-			},
-			
-		},
-
-		{
-			"name": "Legendary Lifter",
-			"source": "DZC",
-			"page": 12,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 1
-			},
-			"featureType": [
-				"DZC:KF:O"
-			],
-			"entries": [
-				"As a bonus action, you can spend 1 ki point to gain the ability to grapple and shove creatures up to three sizes larger than you for 10 minutes."
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 9,
-						"class": {
-							"name": "Monk Rework",
-							"source": "DZC",
-							"visible": true
-						}
-					},
-					"feature": [
-						"Grappling Style feature: Dynamic Hold"
-					]
-				}
-			]
-			
-		},
-
-		{
-			"name": "Hardened Fists",
-			"source": "DZC",
-			"page": 12,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 1
-			},
-			"featureType": [
-				"DZC:KF:O"
-			],
-			"entries": [
-				"As a bonus action, you can spend 1 ki point to turn your fists into destructive weapons for 10 minutes. For the duration, your unarmed strikes deal double damage to objects and ignore an amount of reduction to bludgeoning, piercing, and slashing damage equal to your monk level plus your Wisdom modifier."
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 9,
-						"class": {
-							"name": "Monk Rework",
-							"source": "DZC",
-							"visible": true
-						}
-					},
-					"feature": [
-						"Unarmed Style feature: Potent Strike"
-					]
-				}
-			]
-			
-		},
-		
-		{
-			"name": "Weakening Strike",
-			"source": "DZC",
-			"page": 12,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 1
-			},
-			"featureType": [
-				"DZC:KF:O"
-			],
-			"entries": [
-				"You can weaken a creature's resistance to your ki effects. When you hit a creature with a melee weapon attack, you can spend 1 ki point to impose a penalty to the next saving throw it makes against a ki feature you use before the end of your next turn. The penalty equals your Wisdom modifier."
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 9,
-						"class": {
-							"name": "Monk Rework",
-							"source": "DZC",
-							"visible": true
-						}
-					}
-				}
-			]
-			
-		},
-		
-		{
-			"name": "Corrected Attack",
-			"source": "DZC",
-			"page": 12,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 1
-			},
-			"featureType": [
-				"DZC:KF:O"
-			],
-			"entries": [
-				"When you make an attack roll with disadvantage, you can spend 1 ki point to make the attack without disadvantage."
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 13,
-						"class": {
-							"name": "Monk Rework",
-							"source": "DZC",
-							"visible": true
-						}
-					}
-				}
-			]
-			
-		},
-
-		{
-			"name": "Heavy Weight",
-			"source": "DZC",
-			"page": 12,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 2
-			},
-			"featureType": [
-				"DZC:KF:O"
-			],
-			"entries": [
-				"When you successfully grapple or shove a creature, you can spend 2 ki points to deal extra damage equal to two rolls of your Martial Arts die + one additional roll per creature size difference."
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 17,
-						"class": {
-							"name": "Monk Rework",
-							"source": "DZC",
-							"visible": true
-						}
-					},
-					"feature": [
-						"three or more Grappling Style features"
-					]
-				}
-			]
-			
-		},
-
-		{
-			"name": "Afterblast",
-			"source": "DZC",
-			"page": 12,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 2
-			},
-			"featureType": [
-				"DZC:KF:O"
-			],
-			"entries": [
-				"When you miss an attack roll with an unarmed strike against a creature, you can spend 2 ki point to deal damage to the target equal to your Strength modifier. The damage is of the same type as your unarmed strike. The attack also counts as a hit for any effect that was added to it previous to making the attack roll."
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 17,
-						"class": {
-							"name": "Monk Rework",
-							"source": "DZC",
-							"visible": true
-						}
-					},
-					"feature": [
-						"three or more Unarmed Style features"
-					]
-				}
-			]
-			
-		},
-
-		{
-			"name": "Deflect Physical Attacks",
-			"source": "DZC",
-			"page": 12,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 1
-			},
-			"featureType": [
-				"DZC:KF:D"
-			],
-			"entries": [
-				"You can spend 1 ki point to use your reaction to deflect, or stop an attack when you are hit by a weapon attack, provided that the weapon, ammunition, or other damaging element is at least one size smaller than you. When you do so, the damage you take from the attack is reduced by one roll of your Martial Arts die + your Dexterity modifier + your monk level.",
-
-				"If you have a free hand, you can use it to catch the weapon or ammunition, provided you reduced the damage to 0."
-			],
-			"foundrySystem": {
-				"activation.type": "reaction",
-				"activation.condition": "When you are hit by a weapon attack",
-				"activation.cost": 1,
-				"actionType": "healing",
-				"damage.parts": [
-					[
-						"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.dex.mod + @classes.monk-rework.levels"
-					],
-					"hp"
-				]
-			},
-			
-		},
-
-		{
-			"name": "Tongue of the Sun and Moon",
-			"source": "DZC",
-			"page": 14,
-			"foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"consumes": {
-				"name": "Ki",
-				"amount": 3
-			},
-			"featureType": [
-				"DZC:KF:U"
-			],
-			"entries": [
-				"You can spend 3 ki points to cast {@spell tongues}."
-			],
-			"prerequisite": [
-				{
-					"level": {
-						"level": 5,
-						"class": {
-							"name": "Monk Rework",
-							"source": "DZC",
-							"visible": true
-						}
-					},
-					"feature": [
-						"Ear of the Ancients ki feature"
-					]
-				}
-			],
-			"additionalSpells": [
-				{
-					"innate": {
-						"_": [
-							"tongues"
-						]
-					},
-					"ability": "wis"
-				}
-			],
-			
-		},
+    "_meta": {
+        "sources": [
+            {
+                "json": "DZ",
+                "abbreviation": "DZ",
+                "full": "Monk Rework",
+                "authors": [
+                    "Dusk Zargoth"
+                ],
+                "convertedBy": [
+                    "Dusk Zargoth"
+                ],
+                "version": "3.0.1",
+                "color": "#DC3636",
+                "url": "https://homebrewery.naturalcrit.com/share/HJys_qVgDJdo",
+                "targetSchema": "2.0"
+            }
+        ],
+        "dateAdded": 1714358643,
+        "dateLastModified": 1714358643,
+        "optionalFeatureTypes": {
+            "DZC:KF": "Monk Rework; Ki Features",
+            "DZC:KF:O": "Monk Rework; Ki Features; Offense",
+            "DZC:KF:D": "Monk Rework; Ki Features; Defense",
+            "DZC:KF:U": "Monk Rework; Ki Features; Utility"
+        }
+    },
+    "class": [
+        {
+            "name": "Monk Rework",
+            "source": "DZC",
+            "page": 1,
+            "hd": {
+                "number": 1,
+                "faces": 8
+            },
+            "proficiency": [
+                "str",
+                "dex"
+            ],
+            "startingProficiencies": {
+                "armor": [
+                    "Unarmored defense (Wisdom)",
+                    "light armor",
+                    "medium armor"
+                ],
+                "weapons": [
+                    "simple",
+                    "{@item shortsword|phb|shortswords}"
+                ],
+                "tools": [
+                    "Choose one type of {@item artisan's tools|phb} or one {@item musical instrument|phb}"
+                ],
+                "skills": [
+                    {
+                        "choose": {
+                            "from": [
+                                "acrobatics",
+                                "athletics",
+                                "history",
+                                "ınsight",
+                                "religion",
+                                "stealth"
+                            ],
+                            "count": 2
+                        }
+                    }
+                ]
+            },
+            "startingEquipment": {
+                "additionalFromBackground": true,
+                "default": [
+                    "(a) a {@item shortsword|phb} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+                    "(a) {@item dart|phb|10 darts} or (b) a {@item shortbow|phb} and {@item arrows (20)|phb|20 arrows}",
+                    "(a) a {@item dungeoneer's pack|phb} or (b) an {@item explorer's pack|phb}"
+                ],
+                "defaultData": [
+                    {
+                        "a": [
+                            "shortsword|phb"
+                        ],
+                        "b": [
+                            {
+                                "equipmentType": "weaponSimple"
+                            }
+                        ]
+                    },
+                    {
+                        "a": [
+                            {
+                                "item": "dart|phb",
+                                "quantity": 10
+                            }
+                        ],
+                        "b": [
+                            "shortbow|phb",
+                            "arrows (20)|phb"
+                        ]
+                    },
+                    {
+                        "a": [
+                            "dungeoneer's pack|phb"
+                        ],
+                        "b": [
+                            "explorer's pack|phb"
+                        ]
+                    }
+                ]
+            },
+            "optionalfeatureProgression": [
+                {
+                    "name": "Ki Features",
+                    "featureType": [
+                        "DZC:KF"
+                    ],
+                    "progression": [
+                        0,
+                        3,
+                        3,
+                        3,
+                        4,
+                        4,
+                        5,
+                        5,
+                        6,
+                        6,
+                        7,
+                        7,
+                        8,
+                        8,
+                        9,
+                        9,
+                        9,
+                        10,
+                        10,
+                        10
+                    ]
+                }
+            ],
+            "classTableGroups": [
+                {
+                    "colLabels": [
+                        "Martial Arts",
+                        "Unarmored Movement",
+                        "Ki Features"
+                    ],
+                    "rows": [
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bonusSpeed",
+                                "value": 0
+                            },
+                            0
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bonusSpeed",
+                                "value": 10
+                            },
+                            3
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bonusSpeed",
+                                "value": 10
+                            },
+                            3
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bonusSpeed",
+                                "value": 10
+                            },
+                            3
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 6
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bonusSpeed",
+                                "value": 15
+                            },
+                            4
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bonusSpeed",
+                                "value": 15
+                            },
+                            4
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bonusSpeed",
+                                "value": 15
+                            },
+                            5
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bonusSpeed",
+                                "value": 20
+                            },
+                            5
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bonusSpeed",
+                                "value": 20
+                            },
+                            6
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 8
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bonusSpeed",
+                                "value": 20
+                            },
+                            6
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bonusSpeed",
+                                "value": 25
+                            },
+                            7
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bonusSpeed",
+                                "value": 25
+                            },
+                            7
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bonusSpeed",
+                                "value": 25
+                            },
+                            8
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bonusSpeed",
+                                "value": 30
+                            },
+                            8
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 10
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bonusSpeed",
+                                "value": 30
+                            },
+                            9
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 12
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bonusSpeed",
+                                "value": 30
+                            },
+                            9
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 12
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bonusSpeed",
+                                "value": 35
+                            },
+                            9
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 12
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bonusSpeed",
+                                "value": 35
+                            },
+                            10
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 12
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bonusSpeed",
+                                "value": 35
+                            },
+                            10
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 1,
+                                        "faces": 12
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "bonusSpeed",
+                                "value": 35
+                            },
+                            10
+                        ]
+                    ]
+                }
+            ],
+            "classFeatures": [
+                "Martial Arts|Monk Rework|DZC|1",
+                "Meditation|Monk Rework|DZC|1",
+                "Ki|Monk Rework|DZC|2",
+                "Unarmored Movement|Monk Rework|DZC|2",
+                {
+                    "classFeature": "Monastic Tradition|Monk Rework|DZC|3",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Monk Rework|DZC|4",
+                "Extra Attack|Monk Rework|DZC|5",
+                "Ki-Empowered Strikes|Monk Rework|DZC|5",
+                "Ability Score Improvement|Monk Rework|DZC|4",
+                {
+                    "classFeature": "Monastic Tradition feature|Monk Rework|DZC|6",
+                    "gainSubclassFeature": true
+                },
+                "Meditation improvement|Monk Rework|DZC|7",
+                "Ability Score Improvement|Monk Rework|DZC|8",
+                "Martial Arts improvement|Monk Rework|DZC|9",
+                "Ability Score Improvement|Monk Rework|DZC|10",
+                {
+                    "classFeature": "Monastic Tradition feature|Monk Rework|DZC|11",
+                    "gainSubclassFeature": true
+                },
+                "Ability Score Improvement|Monk Rework|DZC|12",
+                "Timeless Body|Monk Rework|DZC|13",
+                "Unrelenting Soul|Monk Rework|DZC|14",
+                "Extra Attack (2)|Monk Rework|DZC|15",
+                "Ability Score Improvement|Monk Rework|DZC|16",
+                {
+                    "classFeature": "Monastic Tradition feature|Monk Rework|DZC|17",
+                    "gainSubclassFeature": true
+                },
+                "Martial Arts improvement|Monk Rework|DZC|18",
+                "Quickened Recovery|Monk Rework|DZC|19",
+                "Ability Score Improvement|Monk Rework|DZC|20",
+                "Perfect Self|Monk Rework|DZC|20"
+            ],
+            "subclassTitle": "Monastic Tradition",
+            "multiclassing": {
+                "requirements": {
+                    "dex": 13,
+                    "wis": 13
+                },
+                "proficienciesGained": {
+                    "weapons": [
+                        "simple",
+                        "{@item shortsword|phb|shortswords}"
+                    ]
+                }
+            },
+            "hasFluff": true
+        }
+    ],
+    "classFeature": [
+        {
+            "name": "Martial Arts",
+            "source": "DZC",
+            "foundryImg": "icons/skills/melee/unarmed-punch-fist-blue.webp",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 3,
+            "level": 1,
+            "entries": [
+                "At 1st level, your are adept at a combat style focused on hand to hand combat and the use of monk weapons, represented by a special die called Martial Arts die, as shown in the Martial Arts column of the Monk table.",
+                "While all martial arts share some principles, each monk adapts them to better suit themselves, thus specializing in one Martial Arts Style or combining them to create their own. Each syle is described below and each one defines what are considered as your monk weapons.",
+                "You learn two features of your choice from any style. When you reach 9th and 18th level in this class, you learn an additional feature of your choice from any style. If a style feature requires a level, you must meet that level in this class to learn it.",
+                "You lose the benefits of your Martial Arts if you are wielding a non-monk weapon or wearing heavy armor.",
+                {
+                    "type": "entries",
+                    "name": "Mixed Style",
+                    "page": 3,
+                    "entries": [
+                        "A balanced style taught to beginners so that they can adapt to any situation. Your monk weapons are any simple melee weapon that doesn't have the two-handed or heavy property.",
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "type": "entries",
+                                    "name": "Chain Attack",
+                                    "entries": [
+                                        "When you take the Attack action on your turn, you can use your bonus action to either make one attack with an unarmed strike or monk weapon you're wielding, or attempt a grapple or shove check."
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Ground Fighting",
+                                    "entries": [
+                                        "Creatures don't have advantage on attack rolls against you for being prone."
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Push Back (9th level)",
+                                    "entries": [
+                                        "If a creature misses you with an attack, you can attempt to push it as a reaction."
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Set Up (18th level)",
+                                    "entries": [
+                                        "On your turn, when you take an action that requires ki points, you can use your bonus action to either make one attack with an unarmed strike or monk weapon you're wielding, or attempt a grapple or shove check."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Grappling Style",
+                    "page": 3,
+                    "entries": [
+                        "You trained to control the weight of your opponents with your own, crushing them in the process. Your monk weapons are any simple melee weapon that doesn't have the two-handed or heavy property.",
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "type": "entries",
+                                    "name": "Wrestling Mastery",
+                                    "entries": [
+                                        "If you succeed on a grapple or shove check, you can deal bludgeoning damage to the target equal to one roll of your Martial Arts die + your Strength modifier."
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Ground Hold",
+                                    "entries": [
+                                        "You can grapple a creature with both of your legs. To do so, either you or the creature must be prone. If the target is prone, you must also sit on top of them."
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Dynamic Hold (9th level)",
+                                    "entries": [
+                                        "Creatures grappled by you have disadvantage on skill checks made to escape your grapples or to shove you."
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Lock (18th level)",
+                                    "entries": [
+                                        "A creature grappled by you takes a penalty to its attack rolls equal to your Strength modifier."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Unarmed Style",
+                    "page": 3,
+                    "entries": [
+                        "You conditioned your body to throw swift and precise unarmed strikes, which can carry a lot of power. Your monk weapons are shortswords and any simple melee weapon that doesn't have the two-handed or heavy property.",
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "type": "entries",
+                                    "name": "Unarmed Mastery",
+                                    "entries": [
+                                        "You can roll your Martial Arts die in place of the normal damage of your unarmed strikes."
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Vital's Hit",
+                                    "entries": [
+                                        "Before you make an unarmed strike, you can take a -5 penalty to the attack roll. If the attack hits, you gain a bonus to the damage roll equal to one roll of your Martial Arts die + your Wisdom modifier."
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Potent Strike (9th level)",
+                                    "entries": [
+                                        "Once on your turn, you can give yourself advantage on an attack roll you make with an unarmed strike."
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Fake Strike (18th level)",
+                                    "entries": [
+                                        "Once on your turn, if you miss an attack roll with an unarmed strike, you can reroll it."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Weapon Style",
+                    "page": 3,
+                    "entries": [
+                        "Not only are you capable of wielding a larger variety of weapons, but you can use it in a more defensive style. Your monk weapons are longbows and any weapon that doesn't have the two-handed, heavy, or special property.",
+                        {
+                            "type": "list",
+                            "items": [
+                                {
+                                    "type": "entries",
+                                    "name": "Monk Weapon Mastery",
+                                    "entries": [
+                                        "You can roll your Martial Arts die in place of the normal damage of your monk weapons."
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Embracing Branch",
+                                    "entries": [
+                                        "When a creature you can see attacks a target within 5 feet from you, you can use your reaction to interpose between them a monk weapon you're wielding, imposing disadvantage on the attack roll."
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Returning Guard (9th level)",
+                                    "entries": [
+                                        "When you make an attack with a monk weapon on your turn, you can use a monk weapon you are holding to protect yourself against the next attack you can see that targets you before the start of your next turn. When you do so, roll your Martial Arts die and add it to your AC against that attack."
+                                    ]
+                                },
+                                {
+                                    "type": "entries",
+                                    "name": "Passive Blockade (18th level)",
+                                    "entries": [
+                                        "While holding a monk weapon, the next attack made against you before the start of your next turn has disadvantage."
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Meditation",
+            "source": "DZC",
+            "foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 3,
+            "level": 1,
+            "entries": [
+                "At 1st level, you know how to block your senses from the external world, entering a state of absolute focus, called meditation. While in this state you remain motionless and unconscious, and the only action you can take is to awaken yourself from it. Your meditation ends if you take damage or another creature uses its action to reach and awaken you.",
+                "With uninterrupted meditation you can finish a short or long rest in half the time, and gain the same benefits of 8 hours of sleep in 4 hours.",
+                "Starting at 7th level, you're no longer rendered unconscious while meditating, and you can see and hear as normal."
+            ]
+        },
+        {
+            "name": "Ki",
+            "source": "DZC",
+            "foundryImg": "icons/magic/symbols/runes-star-pentagon-blue.webp",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 3,
+            "level": 2,
+            "entries": [
+                "Starting at 2nd level, you have reached the stage in which you can harness the mystic energy of ki, which can be used to perform superhuman feats through a variety of techniques.",
+                {
+                    "type": "entries",
+                    "name": "Ki Points",
+                    "page": 3,
+                    "entries": [
+                        "Your access to this energy is represented by a number of ki points. You have an amount of ki points equal to your monk level + your Wisdom modifier, unless that modifier is negative. You regain all expended ki points when you use your meditation to finish a short or long rest.",
+                        "Whenever you gain a level in this class, you can choose one of the ki features you know and replace it with another one that you could learn at that level."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Ki Features",
+                    "page": 4,
+                    "entries": [
+                        "Your ki fuels various techniques called Ki Features, each detailed in the Ki Features section of this class. The number of ki features you know is shown in the Ki Features column of the Monk table.",
+                        "Whenever you gain a level in this class, you can choose one of the ki features you know and replace it with another one that you could learn at that level."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Ki Saving Throws",
+                    "page": 4,
+                    "entries": [
+                        "Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:",
+                        {
+                            "type": "abilityDc",
+                            "name": "Ki",
+                            "attributes": [
+                                "wis"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Ki Rules and Restrictions",
+                    "page": 4,
+                    "entries": [
+                        "Some subclass features use ki to fuel an ability, these count as Ki Features for the purpose of this section.",
+                        "When a Ki Feature uses one of your Ability modifiers for calculation, the minimum modifier you can use is 1.",
+                        "You can't use ki and lose the benefits of any Ki Feature you have active if you are wielding a non-monk weapon or wearing heavy armor, if you are unconscious, or dead.",
+                        "Some of your Ki Features allow you to cast spells. To cast one of these spells, you use its casting time and other rules, but you don't need to provide material components for it. Wisdom is your spellcasting ability for spells cast in this way."
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Unarmored Movement",
+            "source": "DZC",
+            "foundryImg": "icons/skills/movement/feet-winged-sandals-tan.webp",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 4,
+            "level": 2,
+            "foundrySystem": {
+                "effects": [
+                    {
+                        "name": "Unarmored Movement",
+                        "changes": [
+                            {
+                                "key": "data.attributes.movement.walk",
+                                "mode": "ADD",
+                                "value": "sign(@attributes.movement.walk) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5)"
+                            },
+                            {
+                                "key": "data.attributes.movement.burrow",
+                                "mode": "ADD",
+                                "value": "sign(@attributes.movement.burrow) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5)"
+                            },
+                            {
+                                "key": "data.attributes.movement.climb",
+                                "mode": "ADD",
+                                "value": "sign(@attributes.movement.climb) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5)"
+                            },
+                            {
+                                "key": "data.attributes.movement.fly",
+                                "mode": "ADD",
+                                "value": "sign(@attributes.movement.fly) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5)"
+                            },
+                            {
+                                "key": "data.attributes.movement.swim",
+                                "mode": "ADD",
+                                "value": "sign(@attributes.movement.swim) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5)"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "entries": [
+                "Starting at 2nd level, you gain a bonus to your movement speed, as shown in the Unarmored Movement column of the Monk table. You lose this benefit if you lose the benefits of your Martial Arts."
+            ]
+        },
+        {
+            "name": "Monastic Tradition",
+            "source": "DZC",
+            "className": "Monk Rework",
+            "classSource": "DC",
+            "page": 4,
+            "level": 3,
+            "entries": [
+                "When you reach 3rd level, you commit yourself to a monastic tradition, all detailed at the end of the class description. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level."
+            ]
+        },
+        {
+            "name": "Monastic Tradition feature",
+            "source": "DZC",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 4,
+            "level": 6,
+            "entries": [
+                "At 6th level, you gain a feature granted by your Monastic Tradition."
+            ]
+        },
+        {
+            "name": "Monastic Tradition feature",
+            "source": "DZC",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 4,
+            "level": 11,
+            "entries": [
+                "At 11th level, you gain a feature granted by your Monastic Tradition."
+            ]
+        },
+        {
+            "name": "Monastic Tradition feature",
+            "source": "DZC",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 4,
+            "level": 17,
+            "entries": [
+                "At 17th level, you gain a feature granted by your Monastic Tradition."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "DZC",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 4,
+            "level": 4,
+            "entries": [
+                "When you reach 4th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "DZC",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 4,
+            "level": 6,
+            "entries": [
+                "When you reach 6th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "DZC",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 4,
+            "level": 8,
+            "entries": [
+                "When you reach 8th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "DZC",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 4,
+            "level": 10,
+            "entries": [
+                "When you reach 10th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "DZC",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 4,
+            "level": 12,
+            "entries": [
+                "When you reach 12th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "DZC",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 4,
+            "level": 16,
+            "entries": [
+                "When you reach 16th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Ability Score Improvement",
+            "source": "DZC",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 4,
+            "level": 20,
+            "entries": [
+                "When you reach 20th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
+                "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+            ]
+        },
+        {
+            "name": "Extra Attack",
+            "source": "DZC",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp",
+            "page": 4,
+            "level": 5,
+            "entries": [
+                "Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn.",
+                "The number of attacks increases to three when you reach 15th level in this class."
+            ]
+        },
+        {
+            "name": "Extra Attack (2)",
+            "source": "DZC",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp",
+            "page": 4,
+            "level": 15,
+            "entries": [
+                "At 15th level, you can attack three times whenever you take the {@action Attack} action on your turn."
+            ]
+        },
+        {
+            "name": "Ki-Empowered Strikes",
+            "source": "DZC",
+            "foundryImg": "icons/magic/symbols/runes-star-pentagon-orange.webp",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 4,
+            "level": 5,
+            "entries": [
+                "Starting at 5th level, your attacks with unarmed strikes and monk weapons count as magical, as well as the damage of your grapples and shoves."
+            ]
+        },
+        {
+            "name": "Timeless Body",
+            "source": "DZC",
+            "foundryImg": "icons/magic/unholy/orb-swirling-teal.webp",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 4,
+            "level": 13,
+            "entries": [
+                "At 13th level, your ki sustains you so that you suffer none of the frailty of old age, and you can't be aged magically. However, you can still die of old age.",
+                "In addition, you can ignore your food and water requirements for a day if you spend it in uninterrupted medidtation. You can do so a number of times equal to your Wisdom modifier before you consume the amount of food and water your body needs to not suffer from exhaustion."
+            ]
+        },
+        {
+            "name": "Unrelenting Soul",
+            "source": "DZC",
+            "foundryImg": "icons/magic/control/debuff-energy-hold-yellow.webp",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 4,
+            "level": 14,
+            "entries": [
+                "Starting at 14th level, when you roll for initiative and have no ki points remaining, you regain 2 ki points. You also regain 1 ki point at the start of each of your turns during combat, unless you are unconscious."
+            ]
+        },
+        {
+            "name": "Quickened Recovery",
+            "source": "DZC",
+            "foundryImg": "icons/magic/control/buff-strength-muscle-damage-orange.webp",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 4,
+            "level": 19,
+            "entries": [
+                "Your mastery over your body protects you from physical ailments. Beginning at 9th level, you are immune to all disease and the poisoned condition.",
+                "Once you use this feature, you can't use it again until you finish a long rest."
+            ]
+        },
+        {
+            "name": "Perfect Self",
+            "source": "DZC",
+            "foundryImg": "icons/magic/control/silhouette-hold-change-blue.webp",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 4,
+            "level": 20,
+            "entries": [
+                "At 20th level, you have cultivated your techniques to the point where they can never be mediocre. Choose one of the following type of rolls: saving throws, Athletics checks, attacks with unarmed strikes, or attacks with monk weapons. You can't roll below a 10 on the d20 against your will when you perform a die roll of the chosen type.",
+                "In addition, when you finish a long rest, you can choose one of the ki features you know and replace it with a different one."
+            ]
+        }
+    ],
+    "optionalfeature": [
+        {
+            "name": "Delaying Strike",
+            "source": "DZC",
+            "page": 11,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "entries": [
+                "With one effective blow you can take the wind out of your foe. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a delaying strike. The target must succeed on a Wisdom saving throw or it can't take reactions until the start of your next turn."
+            ],
+            "featureType": [
+                "DZC:KF:O"
+            ]
+        },
+        {
+            "name": "Extension of Self",
+            "source": "DZC",
+            "page": 12,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF:O"
+            ],
+            "entries": [
+                "When you make your first attack on your turn, you can spend 1 ki point to increase the distance of your attacks until the end of your turn. For the duration, you add 5 feet to your reach with melee weapon attacks and attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls."
+            ]
+        },
+        {
+            "name": "Flurry of Blows",
+            "source": "DZC",
+            "page": 12,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF:O"
+            ],
+            "entries": [
+                "When you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action."
+            ],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Unarmed Style feature: Unarmed Mastery"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Heavy Strike",
+            "source": "DZC",
+            "page": 12,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF:O"
+            ],
+            "entries": [
+                "You can deal a massive blow to a creature that causes it to crush on its own weight. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a heavy strike. The target must succeed on a Dexterity saving throw or be knocked prone."
+            ]
+        },
+        {
+            "name": "Pushing Strike",
+            "source": "DZC",
+            "page": 12,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF:O"
+            ],
+            "entries": [
+                "With the storm by your side you can send creatures flying far away. When you hit with a melee weapon attack a creature no more than one size larger than you, you can spend 1 ki point to attempt a pushing strike. The target must succeed on a Strength saving throw or be pushed up to 15 feet away from you."
+            ]
+        },
+        {
+            "name": "Strong Arm",
+            "source": "DZC",
+            "page": 12,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF:O"
+            ],
+            "entries": [
+                "When a creature provokes an opportunity attack from you, you can spend 1 ki point as a reaction to attempt to grapple or shove it."
+            ],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Grappling Style feature: Wrestling Mastery"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Concussive Strike",
+            "source": "DZC",
+            "page": 12,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF:O"
+            ],
+            "entries": [
+                "You can turn a creature dizzy with a powerful strike. When you hit another creature with a melee weapon attack, you can spend 1 ki point to use a concussive hit. The creature takes a -2 penalty to skill checks and attack rolls until the start of your next turn.",
+                "A creature can't be affected by this ki feature more than once at the same time."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Deadly Precision",
+            "source": "DZC",
+            "page": 12,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF:O"
+            ],
+            "entries": [
+                "Before you make an attack, you can spend 1 ki point to add one roll of your Martial Arts die to the attack or damage roll."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "actionType": "other",
+                "formula": [
+                    "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
+                ]
+            }
+        },
+        {
+            "name": "Mighty Fists",
+            "source": "DZC",
+            "page": 12,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF:O"
+            ],
+            "entries": [
+                "As a bonus action, you can spend 1 ki point to grant your unarmed strikes a +1 bonus to attack and damage rolls for 10 minutes. This benefit ends early if you are incapacitated."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Unarmed Style feature: Vital's Hit"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Taunting Strike",
+            "source": "DZC",
+            "page": 12,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF:O"
+            ],
+            "entries": [
+                "You can provoke a creature so it deems you as the only threat. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a taunting strike. The target must make a Wisdom saving throw. On a failed save, the creature can't target creatures other than you with attacks, spells, or any harmful ability until the start of your next turn. For the duration, creatures other than you have advantage on attack rolls against that creature."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Returning Attack",
+            "source": "DZC",
+            "page": 12,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF:O"
+            ],
+            "entries": [
+                "If you use your Deflect Physical Attacks and reduce the damage to 0, you can spend 1 ki point to counter attack as part of the same reaction. If you do so, make a melee attack if the triggering attack was a melee attack, or a ranged attack using the weapon or piece of ammunition you just caught if it was a ranged attack.",
+                "You make the ranged attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack, which has a range of 20/60 feet."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Deflect Physical Attacks ki feature"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Restraining Hand",
+            "source": "DZC",
+            "page": 12,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF:O"
+            ],
+            "entries": [
+                "When you succeed on a grapple check against a creature, you can spend 1 ki point to lock the creature. The creature becomes restrained for the duration of the grapple."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Grappling Style feature: Ground Hold"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Stunning Strike",
+            "source": "DZC",
+            "page": 12,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF:O"
+            ],
+            "entries": [
+                "You can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be {@condition stunned} until the end of the creature's next turn."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you hit a creature with a melee weapon attack",
+                "actionType": "save",
+                "save.ability": "con",
+                "save.scaling": "wis"
+            }
+        },
+        {
+            "name": "Legendary Lifter",
+            "source": "DZC",
+            "page": 12,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF:O"
+            ],
+            "entries": [
+                "As a bonus action, you can spend 1 ki point to gain the ability to grapple and shove creatures up to three sizes larger than you for 10 minutes."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Grappling Style feature: Dynamic Hold"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Hardened Fists",
+            "source": "DZC",
+            "page": 12,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF:O"
+            ],
+            "entries": [
+                "As a bonus action, you can spend 1 ki point to turn your fists into destructive weapons for 10 minutes. For the duration, your unarmed strikes deal double damage to objects and ignore an amount of reduction to bludgeoning, piercing, and slashing damage equal to your monk level plus your Wisdom modifier."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Unarmed Style feature: Potent Strike"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Weakening Strike",
+            "source": "DZC",
+            "page": 12,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF:O"
+            ],
+            "entries": [
+                "You can weaken a creature's resistance to your ki effects. When you hit a creature with a melee weapon attack, you can spend 1 ki point to impose a penalty to the next saving throw it makes against a ki feature you use before the end of your next turn. The penalty equals your Wisdom modifier."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Corrected Attack",
+            "source": "DZC",
+            "page": 12,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF:O"
+            ],
+            "entries": [
+                "When you make an attack roll with disadvantage, you can spend 1 ki point to make the attack without disadvantage."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Heavy Weight",
+            "source": "DZC",
+            "page": 12,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 2
+            },
+            "featureType": [
+                "DZC:KF:O"
+            ],
+            "entries": [
+                "When you successfully grapple or shove a creature, you can spend 2 ki points to deal extra damage equal to two rolls of your Martial Arts die + one additional roll per creature size difference."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 17,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "three or more Grappling Style features"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Afterblast",
+            "source": "DZC",
+            "page": 12,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 2
+            },
+            "featureType": [
+                "DZC:KF:O"
+            ],
+            "entries": [
+                "When you miss an attack roll with an unarmed strike against a creature, you can spend 2 ki point to deal damage to the target equal to your Strength modifier. The damage is of the same type as your unarmed strike. The attack also counts as a hit for any effect that was added to it previous to making the attack roll."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 17,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "three or more Unarmed Style features"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Deflect Physical Attacks",
+            "source": "DZC",
+            "page": 12,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF:D"
+            ],
+            "entries": [
+                "You can spend 1 ki point to use your reaction to deflect, or stop an attack when you are hit by a weapon attack, provided that the weapon, ammunition, or other damaging element is at least one size smaller than you. When you do so, the damage you take from the attack is reduced by one roll of your Martial Arts die + your Dexterity modifier + your monk level.",
+                "If you have a free hand, you can use it to catch the weapon or ammunition, provided you reduced the damage to 0."
+            ],
+            "foundrySystem": {
+                "activation.type": "reaction",
+                "activation.condition": "When you are hit by a weapon attack",
+                "activation.cost": 1,
+                "actionType": "healing",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.dex.mod + @classes.monk-rework.levels"
+                    ],
+                    "hp"
+                ]
+            }
+        },
+        {
+            "name": "Tongue of the Sun and Moon",
+            "source": "DZC",
+            "page": 14,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 3
+            },
+            "featureType": [
+                "DZC:KF:U"
+            ],
+            "entries": [
+                "You can spend 3 ki points to cast {@spell tongues}."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Ear of the Ancients ki feature"
+                    ]
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": [
+                            "tongues"
+                        ]
+                    },
+                    "ability": "wis"
+                }
+            ]
+        }
+    ],
 		"feat": [
 			{
 				"name": "Martial Arts Initiate",
