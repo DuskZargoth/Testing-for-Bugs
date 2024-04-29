@@ -1,9 +1,10 @@
 {
-    "_meta": {
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+	"_meta": {
         "sources": [
             {
-                "json": "DZ",
-                "abbreviation": "DZ",
+                "json": "Monk Rework by Dusk Zargoth",
+                "abbreviation": "MRDZ",
                 "full": "Monk Rework",
                 "authors": [
                     "Dusk Zargoth"
@@ -11,10 +12,9 @@
                 "convertedBy": [
                     "Dusk Zargoth"
                 ],
-                "version": "3.0.1",
-                "color": "#DC3636",
-                "url": "https://homebrewery.naturalcrit.com/share/HJys_qVgDJdo",
-                "targetSchema": "2.0"
+                "version": "1.0.1",
+                "color": "DC3636",
+                "url": "https://homebrewery.naturalcrit.com/share/HJys_qVgDJdo"
             }
         ],
         "dateAdded": 1714358643,
@@ -41,9 +41,8 @@
             ],
             "startingProficiencies": {
                 "armor": [
-                    "Unarmored defense (Wisdom)",
-                    "light armor",
-                    "medium armor"
+                    "light",
+                    "medium"
                 ],
                 "weapons": [
                     "simple",
@@ -524,7 +523,7 @@
             "hasFluff": true
         }
     ],
-    "classFeature": [
+    "classFeature"; [
         {
             "name": "Martial Arts",
             "source": "DZC",
@@ -1037,7 +1036,7 @@
             ]
         }
     ],
-    "optionalfeature": [
+    "optionalfeature"; [
         {
             "name": "Delaying Strike",
             "source": "DZC",
@@ -1620,198 +1619,198 @@
             ]
         }
     ],
-		"feat": [
-			{
-				"name": "Martial Arts Initiate",
-				"source": "LLAM:E",
-				"page": 2,
-				"entries": [
-					"You have some basic martial arts training, giving you some skill in both unarmed combat and unarmed defense.",
-					{
-						"type": "list",
-						"items": [
-							"So long as you aren't wearing armor or a shield, your Armor Class equals 13 + your Dexterity modifier.",
-							"Your unarmed strikes deal bludgeoning damage equal to {@dice 1d4} + your Strength or Dexterity modifier on hit.",
-							"When you take the {@action Attack} action on your turn and only make unarmed strikes, you can make a single unarmed strike as a bonus action on that same turn."
-						]
-					}
-				]
-			},
-			{
-				"name": "Ki Warrior",
-				"source": "LLAM:E",
-				"page": 2,
-				"entries": [
-					"You have studied and mastered monastic Techniques which allow you to perform supernatural feats of spiritual power.",
-					{
-						"type": "list",
-						"items": [
-							"You learn two Techniques from the Alternate Monk class. If the Technique has a prerequisite or mentions a Martial Arts die, you can learn it only if you are a Monk and you meet its prerequisites. If a Technique requires the target to make a saving throw to resist its effects, the DC equals 8 + your proficiency bonus + your Wisdom modifier.",
-							"You gain 2 Ki Points to spend on Techniques. You regain all of your expended Ki Points when you finish a short or long rest. If you have Ki from another feature, these Ki Points are added to your total pool of Ki Points."
-						]
-					}
-				]
-			}
-		],
+	"feat"; [
+		{
+			"name": "Martial Arts Initiate",
+			"source": "LLAM:E",
+			"page": 2,
+			"entries": [
+				"You have some basic martial arts training, giving you some skill in both unarmed combat and unarmed defense.",
+				{
+					"type": "list",
+					"items": [
+						"So long as you aren't wearing armor or a shield, your Armor Class equals 13 + your Dexterity modifier.",
+						"Your unarmed strikes deal bludgeoning damage equal to {@dice 1d4} + your Strength or Dexterity modifier on hit.",
+						"When you take the {@action Attack} action on your turn and only make unarmed strikes, you can make a single unarmed strike as a bonus action on that same turn."
+					]
+				}
+			]
+		},
+		{
+			"name": "Ki Warrior",
+			"source": "LLAM:E",
+			"page": 2,
+			"entries": [
+				"You have studied and mastered monastic Techniques which allow you to perform supernatural feats of spiritual power.",
+				{
+					"type": "list",
+					"items": [
+						"You learn two Techniques from the Alternate Monk class. If the Technique has a prerequisite or mentions a Martial Arts die, you can learn it only if you are a Monk and you meet its prerequisites. If a Technique requires the target to make a saving throw to resist its effects, the DC equals 8 + your proficiency bonus + your Wisdom modifier.",
+						"You gain 2 Ki Points to spend on Techniques. You regain all of your expended Ki Points when you finish a short or long rest. If you have Ki from another feature, these Ki Points are added to your total pool of Ki Points."
+					]
+				}
+			]
+		}
+	],
 	
-		"subclass": [
-			{
-				"name": "Way of the Boulder",
-				"source": "LLAM:E",
-				"className": "Alternate Monk",
-				"classSource": "LLAM",
-				"shortName": "Boulder",
-				"optionalfeatureProgression": [
-					{
-						"name": "Boulder Techniques",
-						"featureType": [
-							"LLAM:T:B"
-						],
-						"progression": {
-							"3": 1,
-							"5": 1,
-							"9": 1
-						}
+	"subclass"; [
+		{
+			"name": "Way of the Boulder",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"shortName": "Boulder",
+			"optionalfeatureProgression": [
+				{
+					"name": "Boulder Techniques",
+					"featureType": [
+						"LLAM:T:B"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
 					}
-				],
-				"subclassFeatures": [
-					"Way of the Boulder|Alternate Monk|LLAM|Boulder|LLAM:E|3",
-					"Rebounding Defense|Alternate Monk|LLAM|Boulder|LLAM:E|6",
-					"Ki Infused Bulk|Alternate Monk|LLAM|Boulder|LLAM:E|10",
-					"Mighty Form|Alternate Monk|LLAM|Boulder|LLAM:E|17",
-					"EarthShaker|Alternate Monk|LLAM|Boulder|LLAM:E|17"
-				]
-			},
-			{
-				"name": "Way of the Brawler",
-				"source": "LLAM:E",
-				"className": "Alternate Monk",
-				"classSource": "LLAM",
-				"shortName": "Brawler",
-				"optionalfeatureProgression": [
-					{
-						"name": "Martial Exploits",
-						"featureType": [
-							"LLAM:BME"
-						],
-						"progression": {
-							"3": 2,
-							"6": 2,
-							"17": 2
-						}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Boulder|Alternate Monk|LLAM|Boulder|LLAM:E|3",
+				"Rebounding Defense|Alternate Monk|LLAM|Boulder|LLAM:E|6",
+				"Ki Infused Bulk|Alternate Monk|LLAM|Boulder|LLAM:E|10",
+				"Mighty Form|Alternate Monk|LLAM|Boulder|LLAM:E|17",
+				"EarthShaker|Alternate Monk|LLAM|Boulder|LLAM:E|17"
+			]
+		},
+		{
+			"name": "Way of the Brawler",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"shortName": "Brawler",
+			"optionalfeatureProgression": [
+				{
+					"name": "Martial Exploits",
+					"featureType": [
+						"LLAM:BME"
+					],
+					"progression": {
+						"3": 2,
+						"6": 2,
+						"17": 2
 					}
-				],
-				"subclassFeatures": [
-					"Way of the Brawler|Alternate Monk|LLAM|Brawler|LLAM:E|3",
-					"Spiritual Stamina|Alternate Monk|LLAM|Brawler|LLAM:E|6",
-					"Infamous Reputation|Alternate Monk|LLAM|Brawler|LLAM:E|10",
-					"Underworld Master|Alternate Monk|LLAM|Brawler|LLAM:E|17"
-				]
-			},
-			{
-				"name": "Way of Ferocity",
-				"source": "LLAM:E",
-				"className": "Alternate Monk",
-				"classSource": "LLAM",
-				"shortName": "Ferocity",
-				"optionalfeatureProgression": [
-					{
-						"name": "Ferocity Techniques",
-						"featureType": [
-							"LLAM:T:Fe"
-						],
-						"progression": {
-							"3": 1,
-							"5": 1,
-							"9": 1
-						}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Brawler|Alternate Monk|LLAM|Brawler|LLAM:E|3",
+				"Spiritual Stamina|Alternate Monk|LLAM|Brawler|LLAM:E|6",
+				"Infamous Reputation|Alternate Monk|LLAM|Brawler|LLAM:E|10",
+				"Underworld Master|Alternate Monk|LLAM|Brawler|LLAM:E|17"
+			]
+		},
+		{
+			"name": "Way of Ferocity",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"shortName": "Ferocity",
+			"optionalfeatureProgression": [
+				{
+					"name": "Ferocity Techniques",
+					"featureType": [
+						"LLAM:T:Fe"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
 					}
-				],
-				"subclassFeatures": [
-					"Way of Ferocity|Alternate Monk|LLAM|Ferocity|LLAM:E|3",
-					"Primal Intuition|Alternate Monk|LLAM|Ferocity|LLAM:E|6",
-					"Power of the Wild|Alternate Monk|LLAM|Ferocity|LLAM:E|10",
-					"Master of Ferocity|Alternate Monk|LLAM|Ferocity|LLAM:E|17"
-				]
-			},
-			{
-				"name": "Way of the Flowing River",
-				"source": "LLAM:E",
-				"className": "Alternate Monk",
-				"classSource": "LLAM",
-				"shortName": "Flowing River",
-				"optionalfeatureProgression": [
-					{
-						"name": "Flowing River Techniques",
-						"featureType": [
-							"LLAM:T:Fl"
-						],
-						"progression": {
-							"3": 1,
-							"5": 1,
-							"9": 1
-						}
+				}
+			],
+			"subclassFeatures": [
+				"Way of Ferocity|Alternate Monk|LLAM|Ferocity|LLAM:E|3",
+				"Primal Intuition|Alternate Monk|LLAM|Ferocity|LLAM:E|6",
+				"Power of the Wild|Alternate Monk|LLAM|Ferocity|LLAM:E|10",
+				"Master of Ferocity|Alternate Monk|LLAM|Ferocity|LLAM:E|17"
+			]
+		},
+		{
+			"name": "Way of the Flowing River",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"shortName": "Flowing River",
+			"optionalfeatureProgression": [
+				{
+					"name": "Flowing River Techniques",
+					"featureType": [
+						"LLAM:T:Fl"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
 					}
-				],
-				"subclassFeatures": [
-					"Way of the Flowing River|Alternate Monk|LLAM|Flowing River|LLAM:E|3",
-					"Graceful Step|Alternate Monk|LLAM|Flowing River|LLAM:E|6",
-					"Enchanting Flow|Alternate Monk|LLAM|Flowing River|LLAM:E|10",
-					"Master of the Flowing River|Alternate Monk|LLAM|Flowing River|LLAM:E|17"
-				]
-			},
-			{
-				"name": "Way of the Hurricane",
-				"source": "LLAM:E",
-				"className": "Alternate Monk",
-				"classSource": "LLAM",
-				"shortName": "Hurricane",
-				"optionalfeatureProgression": [
-					{
-						"name": "Hurricane Techniques",
-						"featureType": [
-							"LLAM:T:H"
-						],
-						"progression": {
-							"3": 1,
-							"5": 1,
-							"9": 1
-						}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Flowing River|Alternate Monk|LLAM|Flowing River|LLAM:E|3",
+				"Graceful Step|Alternate Monk|LLAM|Flowing River|LLAM:E|6",
+				"Enchanting Flow|Alternate Monk|LLAM|Flowing River|LLAM:E|10",
+				"Master of the Flowing River|Alternate Monk|LLAM|Flowing River|LLAM:E|17"
+			]
+		},
+		{
+			"name": "Way of the Hurricane",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"shortName": "Hurricane",
+			"optionalfeatureProgression": [
+				{
+					"name": "Hurricane Techniques",
+					"featureType": [
+						"LLAM:T:H"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
 					}
-				],
-				"subclassFeatures": [
-					"Way of the Hurricane|Alternate Monk|LLAM|Hurricane|LLAM:E|3",
-					"Crushing Counter|Alternate Monk|LLAM|Hurricane|LLAM:E|6",
-					"Buffeting Winds|Alternate Monk|LLAM|Hurricane|LLAM:E|10",
-					"Master of the Hurricane|Alternate Monk|LLAM|Hurricane|LLAM:E|17"
-				]
-			},
-			{
-				"name": "Way of the Sacred Inks",
-				"source": "LLAM:E",
-				"className": "Alternate Monk",
-				"classSource": "LLAM",
-				"shortName": "Sacred Inks",
-				"optionalfeatureProgression": [
-					{
-						"name": "Sacred Ink Techniques",
-						"featureType": [
-							"LLAM:T:SI"
-						],
-						"progression": {
-							"3": 1,
-							"5": 1,
-							"9": 1
-						}
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Hurricane|Alternate Monk|LLAM|Hurricane|LLAM:E|3",
+				"Crushing Counter|Alternate Monk|LLAM|Hurricane|LLAM:E|6",
+				"Buffeting Winds|Alternate Monk|LLAM|Hurricane|LLAM:E|10",
+				"Master of the Hurricane|Alternate Monk|LLAM|Hurricane|LLAM:E|17"
+			]
+		},
+		{
+			"name": "Way of the Sacred Inks",
+			"source": "LLAM:E",
+			"className": "Alternate Monk",
+			"classSource": "LLAM",
+			"shortName": "Sacred Inks",
+			"optionalfeatureProgression": [
+				{
+					"name": "Sacred Ink Techniques",
+					"featureType": [
+						"LLAM:T:SI"
+					],
+					"progression": {
+						"3": 1,
+						"5": 1,
+						"9": 1
 					}
-				],
-				"subclassFeatures": [
-					"Way of the Sacred Inks|Alternate Monk|LLAM|Sacred Inks|LLAM:E|3",
-					"Heavenly Protection|Alternate Monk|LLAM|Sacred Inks|LLAM:E|6",
-					"Light of the Heavens|Alternate Monk|LLAM|Sacred Inks|LLAM:E|10",
-					"Master of the Sacred Inks|Alternate Monk|LLAM|Sacred Inks|LLAM:E|17"
-				]
-			},
+				}
+			],
+			"subclassFeatures": [
+				"Way of the Sacred Inks|Alternate Monk|LLAM|Sacred Inks|LLAM:E|3",
+				"Heavenly Protection|Alternate Monk|LLAM|Sacred Inks|LLAM:E|6",
+				"Light of the Heavens|Alternate Monk|LLAM|Sacred Inks|LLAM:E|10",
+				"Master of the Sacred Inks|Alternate Monk|LLAM|Sacred Inks|LLAM:E|17"
+			]
+		},
 			{
 				"name": "Way of the Vigilante",
 				"source": "LLAM:E",
@@ -2383,7 +2382,7 @@
 				]
 			}
 		],
-		"subclassFeature": [
+		"subclassFeature"; [
 			{
 				"name": "Way of the Drunken Fist",
 				"source": "LLAM",
@@ -5489,7 +5488,7 @@
 				]
 			}
 		],
-		"foundryClassFeature": [
+		"foundryClassFeature"; [
 			{
 				"name": "Ki",
 				"source": "LLAM",
@@ -5502,7 +5501,7 @@
 				}
 			}
 		],
-		"classFluff": [
+		"classFluff"; [
 			{
 				"name": "Alternate Monk",
 				"source": "LLAM",
@@ -5589,6 +5588,5 @@
 				]
 			}
 		]
-	]
 
 }
