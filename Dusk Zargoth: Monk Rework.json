@@ -1835,84 +1835,64 @@
 	
 	"classFluff": [
 		{
-			"name": "Alternate Monk",
-			"source": "LLAM",
+			"name": "Monk Rework",
+			"source": "DZC",
 			"entries": [
 				{
 					"type": "section",
-					"name": "The Monk",
+					"name": "Monk",
 					"page": 1,
-					"source": "LLAM",
+					"source": "DZC",
 					"entries": [
-						"The young man took a deep breath and steadied himself as the ogre charged him. Thinking back to his training he prepared to counter the incoming blow. As the ogre's club struck the dirt where he had been only moments before, the young man drew upon his reservoir of spiritual power and let fly a flurry of blows upon the unsuspecting beast. Before the hulking ogre realized what had happened, it lay stunned in the mud. Hopefully, when the ogre regained consciousness it would think twice before raiding the local homesteads.",
-						"Moving silently through the darkness of the moonless night, a squad of hobgoblin assassins approached the tent of the enemy general. Trained in Martial Arts from birth, the lethal warriors slew the enemy guards without a sound. As the general stirred from sleep, his eyed widened as the hobgoblins seemed to appear from the darkness itself. He tried to call for help, but no sound came from his mouth as his life was ruthlessly snuffed out by the assassins. As quietly as they had arrived, the dark hobgoblin assassins disappeared into the night.",
-						"The Grand Master stepped forward to block the pass. As her students reluctantly fled into the mountains, she studied the horde of goblins that would soon be upon her. Though she was the most powerful living Wu Jen master, even in her prime she could not hope to slay half this many foes. She dropped her cloak from her shoulders, and her tattoos glistened with elemental magic as she prepared to bring down the mountain itself down upon her. Though she would most certainly perish, the pass would be blocked, and most importantly, her students would be able to escape.",
+						"Jumping across the roofs with unmatched speed, she pursues the assassin across the city, slowing it little by little with arrows. The criminal now face to face with the wood elf shortly finds themselves immovilized on the ground, unwilling to continue fighting.",
+
+						"The half-orc battles the adult dragon, protecting the sanctuary's gate with nothing but his body. The little warrior holds his adversary by the neck and subdues it to the ground, finishing the assault.",
+
+						"The human unwraps his bandages as the elite knights surround him and ready their weapons. Driven by the thirst of a fight, he dispateches them with hardened strikes that pierce their armors. After taking a deep breath he resumes his hunt for the tyrant.",
+
+						"Whatever their discipline, monks are united in their ability to magically harness the energy that flows in their bodies. Whether channeled as a striking display of combat prowess or a subtler focus of defensive ability and speed, this energy infuses all that a monk does.",
 						{
 							"type": "entries",
-							"name": "Mastery of Body and Mind",
+							"name": "The Magic of Ki",
 							"page": 1,
 							"entries": [
-								"Where most warriors strive for physical perfection, monks spend their lives training both their body and mind to work together. When both aspects of themselves are mastered, a monk is able to channel the life giving spiritual energy within themselves, their ki. Drawing upon this hidden power, these reclusive warriors can perform supernatural physical feats.",
-								"Looking always inward, monks often eschew any material possession they cannot carry on their backs, instead focusing on immaterial wealth. Whether enlightenment, happiness, challenging foes, or tests of might, all monks usually have an ideal or goal that they are constantly striving toward."
+								"Monks make careful study of a magical energy that most monastic traditions call ki. This energy is an element of the magic that suffuses the multiverse-specifically, the element that flows through living bodies. Monks harness this power within themselves to create magical effects, exceed their bodies' physical capabilities, or alter the state of a creature by manipulating their ki. Using this energy, monks channel uncanny speed and strength into their attacks. As they gain experience, their martial training and their mastery of ki gives them more power over their bodies and the bodies of their foes."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Mystic Asceticism",
+							"name": "Training and Asceticism",
 							"page": 1,
 							"entries": [
-								"Often trained in hidden monasteries or by reclusive masters, monks must often give up any inheritance or titles in order to be accepted as monastic students. Some grand masters even require years of servitude and dedication to the monastery before they will even begin to train a new pupil. Once begun, a monks training does not stop until they die. They put all of their heart, mind, and soul in their quest for a perfect self.",
-								"Even the greatest monastic masters will sometimes seek out other monasteries, entering as a novice, even in old age. The quest for perfection is never ending, and despite great spiritual progress, the greatest view themselves as novices, eager to progress on the next step to enlightenment."
+								"Small walled cloisters dot the landscapes of the worlds of D&D, tiny refuges from the flow of ordinary life, where time seems to stand still. The monks who live there seek personal perfection through contemplation and rigorous training. Many entered the monastery as children, sent to live there when their parents died, when food couldn't be found to support them, or in return for some kindness that the monks had performed for their families.",
+
+								"A monastery welcomes anyone seeking refuge, and all its inhabitants must abide by its community rules. However, to be considered a monk, it is required that one persistently and rigurously trains body and spirit, for they believe that only when both work in harmony and are pushed past its limitations everyday that one can reach their perfect self. Such is the goal of every monk. It is for that purpose that many monastic traditions have been created, for the path is unique for each individual.",
+
+								"Some monks live entirely apart from the surrounding population, secluded from anything that might impede their spiritual progress. Others are sworn to isolation, emerging only to serve their mentor or a divine power, often to fulfill a spiritual task, others to carry out an important mission. In some cases, they embark themselves on a meaningful journey for self discovery.",
+
+								"The majority of monks don't shun their neighbors, making frequent visits to nearby towns or villages and exchanging their service for food and other goods. As versatile warriors, monks often end up protecting their neighbors from monsters or tyrants.",
+
+								"For a monk, becoming an adventurer is a harsh transition. It means leaving a structured, communal lifestyle to become a wanderer. Thus, those who leave their cloisters don't undertake this change lightly. They work diligently, approaching their adventures as personal tests of their physical and spiritual growth. Monks care little for material wealth and are driven by a desire to accomplish a greater mission than slaying monsters and plundering their treasure."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Creating Your Monk",
-							"page": 1,
+							"name": "Creating a Monk",
+							"page": 2,
 							"entries": [
-								"When you create your monk, consider who instructed you in the ways of martial arts, and what they gave up in order to become a student. Were you an orphan left on the steps of a mountain monastery, raised from birth as a student of the Eternal Mountain technique? Or were you the lesser child of a noble family who gave up everything in order to learn the Shadow Arts in a quest for vengeance? Whatever the reason for your training, consider why you left a life of solitude and introspection for the dangerous life of an adventurer.",
-								{
-									"type": "table",
-									"caption": "Example Monasteries",
-									"colLabels": [
-										"Name",
-										"Monastic Tradition"
-									],
-									"colStyles": [
-										"col-6",
-										"col-6 text-center"
-									],
-									"rows": [
-										[
-											"Disciples of the Way",
-											"Way of the Open Hand"
-										],
-										[
-											"Iron Shadow Assassins",
-											"Way of the Shadow Arts"
-										],
-										[
-											"Order of the Gravekeepers",
-											"Way of the Reaper"
-										],
-										[
-											"Sacred Light Monastery",
-											"Way of Radiance"
-										],
-										[
-											"Temple of the Five Ways",
-											"Way of the Wu Jen"
-										]
-									]
-								},
-								{
-									"type": "entries",
-									"name": "Quick Build",
-									"page": 2,
-									"entries": [
-										"You can make a monk quickly by using these suggestions. First, make Dexterity your highest ability score, followed by your Constitution if you wish to focus on physical power, or your Wisdom if you wish to focus on spiritual enlightenment. Second, choose either the {@background acolyte} or the {@background hermit} background."
-									]
-								}
+								"As you make your monk character, think about your connection to the monastery where you learned your skills and spent your formative years. Were you an orphan or a child left on the monastery's threshold? Did your parents promise you to the monastery in gratitude for a service performed by the monks? Did you enter this secluded life to hide from a crime you committed? Or did you choose the monastic life for yourself? And why did you choose to study your discipline?",
+								
+								"Consider why you left. Did the head of your monastery choose you for a particularly important mission beyond the cloister? Perhaps you were cast out because of some violation of the community's rules. Did you dread leaving, or were you happy to go? Is there something you hope to accomplish outside the monastery? Are you eager to return to your home?",
+
+								"As a result of the structured life of a monastic community and the discipline required to harness ki, monks are almost always lawful in alignment."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Quick Build",
+							"page": 2,
+							"entries": [
+								"You can make a monk quickly by using these suggestions. First, make Dexterity your highest ability score, followed by your Constitution if you wish to focus on physical power, or your Wisdom if you wish to focus on spiritual enlightenment. Second, choose either the {@background acolyte} or the {@background hermit} background."
 							]
 						}
 					]
