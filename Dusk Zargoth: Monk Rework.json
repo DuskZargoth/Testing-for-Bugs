@@ -646,7 +646,7 @@
             "foundryImg": "icons/magic/control/debuff-energy-hold-yellow.webp",
             "className": "Monk Rework",
             "classSource": "DZC:ANA",
-            "page": 0,
+            "page": 1,
             "level": 1,
 			"foundrySystem": {
 				"effects": [
