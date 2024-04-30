@@ -523,7 +523,7 @@
             "hasFluff": true
         }
     ],
-    "classFeature"; [
+    "classFeature": [
         {
             "name": "Martial Arts",
             "source": "DZC",
@@ -1036,7 +1036,7 @@
             ]
         }
     ],
-    "optionalfeature"; [
+    "optionalfeature": [
         {
             "name": "Delaying Strike",
             "source": "DZC",
@@ -1619,7 +1619,7 @@
             ]
         }
     ],
-	"feat"; [
+	"feat": [
 		{
 			"name": "Martial Arts Initiate",
 			"source": "LLAM:E",
@@ -1653,7 +1653,7 @@
 		}
 	],
 	
-	"subclass"; [
+	"subclass": [
 		{
 			"name": "Way of the Boulder",
 			"source": "LLAM:E",
@@ -2382,7 +2382,7 @@
 				]
 			}
 		],
-		"subclassFeature"; [
+		"subclassFeature": [
 			{
 				"name": "Way of the Drunken Fist",
 				"source": "LLAM",
@@ -5488,7 +5488,7 @@
 				]
 			}
 		],
-		"foundryClassFeature"; [
+		"foundryClassFeature": [
 			{
 				"name": "Ki",
 				"source": "LLAM",
@@ -5501,7 +5501,7 @@
 				}
 			}
 		],
-		"classFluff"; [
+		"classFluff": [
 			{
 				"name": "Alternate Monk",
 				"source": "LLAM",
