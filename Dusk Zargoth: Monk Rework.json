@@ -1619,36 +1619,32 @@
             ]
         }
     ],
+	
 	"feat": [
 		{
-			"name": "Martial Arts Initiate",
-			"source": "LLAM:E",
-			"page": 2,
+			"name": "Martial Arts Beginner",
+			"source": "DZC",
+			"page": 15,
 			"entries": [
-				"You have some basic martial arts training, giving you some skill in both unarmed combat and unarmed defense.",
-				{
-					"type": "list",
-					"items": [
-						"So long as you aren't wearing armor or a shield, your Armor Class equals 13 + your Dexterity modifier.",
-						"Your unarmed strikes deal bludgeoning damage equal to {@dice 1d4} + your Strength or Dexterity modifier on hit.",
-						"When you take the {@action Attack} action on your turn and only make unarmed strikes, you can make a single unarmed strike as a bonus action on that same turn."
-					]
-				}
+				"You have grasped the very basics of martial arts, which prove useful to aid you in battle.",
+
+				"You learn one Martial Arts Style of your choice from the monk class and learn all its features that don't have a level prerequisite. Your Martial Arts die for this style is a d6.",
+
+				"Whenever you gain a level that grants the Ability Score Improvement feature, you can replace this feat's style with another one from the monk class."
 			]
 		},
 		{
-			"name": "Ki Warrior",
-			"source": "LLAM:E",
-			"page": 2,
+			"name": "Minor Ki Control",
+			"source": "DZC",
+			"page": 15,
 			"entries": [
-				"You have studied and mastered monastic Techniques which allow you to perform supernatural feats of spiritual power.",
-				{
-					"type": "list",
-					"items": [
-						"You learn two Techniques from the Alternate Monk class. If the Technique has a prerequisite or mentions a Martial Arts die, you can learn it only if you are a Monk and you meet its prerequisites. If a Technique requires the target to make a saving throw to resist its effects, the DC equals 8 + your proficiency bonus + your Wisdom modifier.",
-						"You gain 2 Ki Points to spend on Techniques. You regain all of your expended Ki Points when you finish a short or long rest. If you have Ki from another feature, these Ki Points are added to your total pool of Ki Points."
-					]
-				}
+				"You managed to tap on the surface of the power that is ki by connecting with your inner self and the flow of energy in your surroundings.",
+
+				"You gain two ki features of your choice from the monk class, which follow the restrictions described in the Ki Rules and Restrictions section of the feature. Your Martial Arts die for these features is a d6. If a ki feature you use requires your target to make a saving throw to resist its effects, the save DC equals 8 + your proficiency bonus + your Wisdom modifier. If the ki feature has a prerequisite of any kind, you can choose it only if you're a monk that meets them.",
+
+				"Whenever you gain a level, you can replace one of these feat's ki features with another one from the monk class.",
+
+				"You gain 2 ki points to spend on ki features (these points are added to any ki points you have from another source, but can be used only on ki features). You regain all expended ki points when you finish a short or long rest that you spent meditating uninterrupted for at least half of its duration."
 			]
 		}
 	],
