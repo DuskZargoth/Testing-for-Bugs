@@ -717,6 +717,44 @@
                 "Starting at 7th level, you're no longer rendered unconscious while meditating, and you can see and hear as normal."
             ]
         },
+
+		{
+            "name": "Unarmored Defense",
+            "source": "DZC",
+            "foundryImg": "icons/magic/control/debuff-energy-hold-yellow.webp",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 0,
+            "level": 1,
+			"foundrySystem": {
+				"effects": [
+					{
+						"name": "Unarmored Defense (Wisdom)",
+						"foundryImg": "icons/magic/control/debuff-energy-hold-yellow.webp",
+						"changes": [
+							{
+								"key": "system.attributes.ac.calc",
+								"mode": "OVERRIDE",
+								"value": "custom"
+							},
+							{
+								"key": "system.attributes.ac.formula",
+								"mode": "CUSTOM",
+								"value": "10+@abilities.dex.mod+@abilities.wis.mod"
+							}
+						]
+					}
+				]
+			},
+            "entries": [
+                "Some characters have access to a specialized form of defense called Unarmored Defense. If your character has proficiency with it, your AC equals to 10 + your Dexterity modifier + your ability modifier listed in parenthesis, while you aren't wearing armor. You also lose this benefit if you wield a shield and lack proficiency with it.",
+
+				"If you have proficiency in this trait with different abilities, you can only benefit from one at the time.",
+
+				"Each ability offers a different interpretation of this trait. For instance, Wisdom allows you to predict attacks and increases your overall awareness of your surroundings; Constitution prevents harm by increasing your studiness; and Charisma makes your presence tangible to others, making them think twice before laying a finger on you."
+            ]
+        },
+
         {
             "name": "Ki",
             "source": "DZC",
@@ -773,6 +811,7 @@
                 }
             ]
         },
+
         {
             "name": "Unarmored Movement",
             "source": "DZC",
@@ -819,6 +858,7 @@
                 "Starting at 2nd level, you gain a bonus to your movement speed, as shown in the Unarmored Movement column of the Monk table. You lose this benefit if you lose the benefits of your Martial Arts."
             ]
         },
+
         {
             "name": "Monastic Tradition",
             "source": "DZC",
@@ -830,6 +870,7 @@
                 "When you reach 3rd level, you commit yourself to a monastic tradition, all detailed at the end of the class description. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level."
             ]
         },
+
         {
             "name": "Monastic Tradition feature",
             "source": "DZC",
@@ -841,6 +882,7 @@
                 "At 6th level, you gain a feature granted by your Monastic Tradition."
             ]
         },
+
         {
             "name": "Monastic Tradition feature",
             "source": "DZC",
@@ -852,6 +894,7 @@
                 "At 11th level, you gain a feature granted by your Monastic Tradition."
             ]
         },
+
         {
             "name": "Monastic Tradition feature",
             "source": "DZC",
@@ -1651,195 +1694,137 @@
 	
 	"subclass": [
 		{
-			"name": "Way of the Open Hand",
-			"shortName": "Open Hand",
-			"source": "LLAM",
-			"className": "Alternate Monk",
-			"classSource": "LLAM",
-			"page": 6,
-			"optionalfeatureProgression": [
-				{
-					"name": "Open Hand Techniques",
-					"featureType": [
-						"LLAM:T:OH"
-					],
-					"progression": {
-						"3": 1,
-						"5": 1,
-						"9": 1
-					}
-				}
-			],
+			"name": "Way of the Inner Strength",
+			"shortName": "Inner Strength",
+			"source": "DZC",
+			"className": "Monk Rework",
+			"classSource": "DZC",
+			"page": 4,
 			"subclassFeatures": [
-				"Way of the Open Hand|Alternate Monk|LLAM|Open Hand|LLAM|3",
-				"Ebb and Flow|Alternate Monk|LLAM|Open Hand|LLAM|6",
-				"Open Hand Strike|Alternate Monk|LLAM|Open Hand|LLAM|10",
-				"Master of Many Forms|Alternate Monk|LLAM|Open Hand|LLAM|10",
-				"Master of the Open Hand|Alternate Monk|LLAM|Open Hand|LLAM|17"
+				"Way of the Inner Strength|Monk Rework|DZC|Inner Strength|DZC|3",
+				"Wholeness of Body|Monk Rework|DZC|Inner Strength|DZC|6",
+				"Blank Mind|Monk Rework|DZC|Inner Strength|DZC|11",
+				"Enlightenment|Monk Rework|DZC|Inner Strength|DZC|17"
 			]
 		}
 	],
 	"subclassFeature": [
 		{
-			"name": "Way of the Open Hand",
-			"source": "LLAM",
-			"page": 6,
-			"className": "Alternate Monk",
-			"classSource": "LLAM",
-			"subclassShortName": "Open Hand",
-			"subclassSource": "LLAM",
+			"name": "Way of the Inner Strength",
+			"source": "DZC",
+			"page": 4,
+			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
+			"className": "Monk Rework",
+			"classSource": "DZC",
+			"subclassShortName": "Inner Strength",
+			"subclassSource": "DZC",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"While all monks are warriors, monks who follow the Way of the Open Hand train relentlessly, forging their bodies into deadly weapons. They do not neglect spiritual training, but disciples of the Open Hand pride themselves on their skill with martial arts, and it is exceptionally rare to see an Open Hand monk who wields a weapon other than their fists.",
+				"Monks of the Way of the Inner Strength are dedicated to cultivating the true potential of ki. They take on a path of diligent meditation and self discovery, searching for the mysteries that dwelve deep within them, rather than those of the universe around them.",
+
+				"More often than not, practicioners of this tradition isolate themselves for long periods of time, disconnecting their terrenal senses in order to heighten their spiritual eye. Only a few can endure this journey, and even less monks can achieve the state of true enlightenment.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Open Hand Techniques|Alternate Monk|LLAM|Open Hand|LLAM|3"
+					"subclassFeature": "Ki Specialist|Monk Rework|DZC|Inner Strength|DZC|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Practiced Strikes|Alternate Monk|LLAM|Open Hand|LLAM|3"
+					"subclassFeature": "Purity of Body|Monk Rework|DZC|Inner Strength|DZC|3"
 				}
 			]
 		},
+
 		{
-			"name": "Open Hand Techniques",
-			"source": "LLAM",
-			"page": 6,
-			"className": "Alternate Monk",
-			"classSource": "LLAM",
-			"subclassShortName": "Open Hand",
-			"subclassSource": "LLAM",
+			"name": "Ki Specialist",
+			"source": "DZC",
+			"page": 4,
+			"foundryImg": "icons/magic/light/hand-sparks-glow-yellow.webp",
+			"className": "Monk Rework",
+			"classSource": "DZC",
+			"subclassShortName": "Inner Strength",
+			"subclassSource": "DZC",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"You learn certain Techniques at the monk levels noted in the table below. These don't count against your total number of Techniques Known. Moreover, when you gain a monk level, you can replace one strike Technique you learned through this feature with another strike Technique of your choice. ",
-				{
-					"type": "table",
-					"colLabels": [
-						"Monk Level",
-						"Technique"
-					],
-					"colStyles": [
-						"col-3 text-center",
-						"col-9"
-					],
-					"rows": [
-						[
-							"3rd",
-							"{@optfeature empowered strike|LLAM}"
-						],
-						[
-							"5th",
-							"{@optfeature stunning strike|LLAM}"
-						],
-						[
-							"9th",
-							"{@optfeature ındomitable spirit|LLAM}"
-						]
-					]
-				}
+				"With the liberation of your spiritual energy, you are less restricted in the use of your ki abilities. Beginning at 3rd level, choose two ki features that you know, that don't have a level restriction, to become your Specialized Ki Features. Once before the start of each of your turns, you can use a Specialized Ki Feature without spending ki points.",
+
+				"By spending 4 hours meditating or when you gain a level in this class, you can exchange one of your Specialized Ki Features for a different one with the same restrictions."
 			]
 		},
+
 		{
-			"name": "Practiced Strikes",
-			"source": "LLAM",
-			"page": 6,
-			"foundryImg": "icons/skills/melee/hand-grip-staff-blue.webp",
-			"className": "Alternate Monk",
-			"classSource": "LLAM",
-			"subclassShortName": "Open Hand",
-			"subclassSource": "LLAM",
+			"name": "Purity of Body",
+			"source": "DZC",
+			"page": 5,
+			"foundryImg": "icons/magic/light/explosion-star-blue.webp",
+			"className": "Monk Rework",
+			"classSource": "DZC",
+			"subclassShortName": "Inner Strength",
+			"subclassSource": "DZC",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Your discipline has made strikes second nature to you. Once per turn when you hit with an unarmed strike, you can use a strike Technique you know without spending a Ki Point",
-				"You can use your strike Techniques in this way a number of times equal to your Wisdom modifier (minimum of once), and you regain all expended uses each time you finish a long rest."
+				"Also at 3rd level, the ki flowing through your body makes you immune to disease and poison."
 			]
 		},
+
 		{
-			"name": "Ebb and Flow",
-			"source": "LLAM",
-			"page": 6,
-			"foundryImg": "icons/skills/melee/maneuver-greatsword-yellow.webp",
-			"className": "Alternate Monk",
-			"classSource": "LLAM",
-			"subclassShortName": "Open Hand",
-			"subclassSource": "LLAM",
+			"name": "Wholeness of Body",
+			"source": "DZC",
+			"page": 5,
+			"foundryImg": "icons/magic/life/heart-glowing-red.webp",
+			"className": "Monk Rework",
+			"classSource": "DZC",
+			"subclassShortName": "Inner Strength",
+			"subclassSource": "DZC",
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"You have trained to redirect your enemy's momentum against them. When a creature you can see misses you with a melee attack, you can use one of the following reactions:",
-				{
-					"type": "list",
-					"items": [
-						"You force it to make a Dexterity saving throw. On a failed save, it is knocked prone and has its speed reduced to 0 until the end of its turn. Any creature that is at least one size larger than you has advantage on its saving throw.",
-						"You can make one unarmed strike against the creature."
-					]
-				}
+				"At 6th level, whenever you finish a rest by meditating and spend at least one Hit Die to heal yourself, you regain additional hit points equal to three times your monk level."
 			]
 		},
+
 		{
-			"name": "Open Hand Strike",
-			"source": "LLAM",
-			"page": 6,
-			"foundryImg": "icons/magic/earth/strike-fist-stone-gray.webp",
-			"className": "Alternate Monk",
-			"classSource": "LLAM",
-			"subclassShortName": "Open Hand",
-			"subclassSource": "LLAM",
-			"level": 10,
+			"name": "Blank Mind",
+			"source": "DZC",
+			"page": 5,
+			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow-white.webp",
+			"className": "Monk Rework",
+			"classSource": "DZC",
+			"subclassShortName": "Inner Strength",
+			"subclassSource": "DZC",
+			"level": 11,
 			"header": 2,
 			"entries": [
-				"Your fists strike with such force as to disrupt the flow of your foe's Ki. When you score a critical hit with an unarmed strike, the creature has disadvantage on any saving throw that you force it to make as part of that unarmed strike attack."
+				"At 11th level, you can reach an state of absolute concentration, in which you, through uninterrupted meditation, can finish a short rest in 1 minute and a long rest in 1 hour. Once you do either of those, you can't do it again before 24 hours."
 			]
 		},
+
 		{
-			"name": "Master of Many Forms",
-			"source": "LLAM",
-			"page": 6,
-			"foundryImg": "icons/magic/control/sihouette-hold-beam-green.webp",
-			"className": "Alternate Monk",
-			"classSource": "LLAM",
-			"subclassShortName": "Open Hand",
-			"subclassSource": "LLAM",
-			"level": 10,
-			"header": 2,
-			"entries": [
-				"You are able to master new Techniques with ease. During the course of a long rest, you can spend 10 minutes practicing your martial arts forms and replace a Technique you currently know with another Technique of your choice for which you meet the prerequisites."
-			]
-		},
-		{
-			"name": "Master of the Open Hand",
-			"source": "LLAM",
-			"page": 6,
-			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow-green.webp",
-			"className": "Alternate Monk",
-			"classSource": "LLAM",
-			"subclassShortName": "Open Hand",
-			"subclassSource": "LLAM",
+			"name": "Enlightenment",
+			"source": "DZC",
+			"page": 5,
+			"foundryImg": "icons/magic/perception/third-eye-blue-red.webp",
+			"className": "Monk Rework",
+			"classSource": "DZC",
+			"subclassShortName": "Inner Strength",
+			"subclassSource": "DZC",
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"You have become an unparalleled master of unarmed martial arts and are able to strike with both overwhelming power and wondrous speed. You gain the benefits listed below:",
-				{
-					"type": "list",
-					"items": [
-						"Whenever you use Flurry of Blows you can make three unarmed strikes instead of the normal two",
-						"When you make an opportunity attack against a creature, you can make two unarmed strikes in place of that attack.",
-						"When you use Ebb and Flow to make an unarmed strike against a creature, you can make two unarmed strikes."
-					]
-				}
+				"By reaching deep within yourself, your soul blossomed to its maximum potential. At 17th level, you can now add one ki feature with a 5th level restriction and one with a 9th level restriction to your Specialized Ki Features."
 			]
 		}
 	
 	],
+
 	"foundryClassFeature": [
 		{
 			"name": "Ki",
-			"source": "LLAM",
-			"className": "Alternate Monk",
-			"classSource": "LLAM",
+			"source": "DZC",
+			"className": "Monk Rework",
+			"classSource": "DZC",
 			"level": 2,
 			"system": {
 				"uses.per": "sr",
@@ -1847,6 +1832,7 @@
 			}
 		}
 	],
+	
 	"classFluff": [
 		{
 			"name": "Alternate Monk",
