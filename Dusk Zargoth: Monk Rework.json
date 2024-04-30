@@ -2172,7 +2172,7 @@
 							"name": "Quick Build",
 							"page": 2,
 							"entries": [
-								"You can make a monk quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. Second, choose the {@background hermit} background. Take the Unarmed Style and when you learn ki features, choose Flurry of Blows, Patient Defense, and Step of the Wind."
+								"You can make a monk quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. Second, choose the {@background hermit} background. Take the Unarmed Style and when you learn ki features, choose {@optfeature Flurry of Blows|DZC}, {@optfeature Patient Defense|DZC}, and {@optfeature Step of the Wind|DZC}."
 							]
 						}
 					]
