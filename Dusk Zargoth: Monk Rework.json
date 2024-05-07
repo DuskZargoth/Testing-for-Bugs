@@ -1,6 +1,6 @@
 {
-"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
-	"_meta": {
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+    "_meta": {
         "sources": [
             {
                 "json": "DZC:ANA",
@@ -17,8 +17,8 @@
                 "url": "https://homebrewery.naturalcrit.com/share/HJys_qVgDJdo"
             }
         ],
-        "dateAdded": 1714358643,
-        "dateLastModified": 1714358643,
+        "dateAdded": 1714935701,
+        "dateLastModified": 1714935701,
         "optionalFeatureTypes": {
 			"DZC:MA": "Monk Rework; Martial Arts",
 			"DZC:MA:MS": "Monk Rework; Martial Arts: Mixed Style",
@@ -180,7 +180,8 @@
                                         "number": 1,
                                         "faces": 6
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -196,7 +197,8 @@
                                         "number": 1,
                                         "faces": 6
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -212,7 +214,8 @@
                                         "number": 1,
                                         "faces": 6
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -228,7 +231,8 @@
                                         "number": 1,
                                         "faces": 6
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -244,7 +248,8 @@
                                         "number": 1,
                                         "faces": 6
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -260,7 +265,8 @@
                                         "number": 1,
                                         "faces": 8
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -276,7 +282,8 @@
                                         "number": 1,
                                         "faces": 8
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -292,7 +299,8 @@
                                         "number": 1,
                                         "faces": 8
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -308,7 +316,8 @@
                                         "number": 1,
                                         "faces": 8
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -324,7 +333,8 @@
                                         "number": 1,
                                         "faces": 8
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -340,7 +350,8 @@
                                         "number": 1,
                                         "faces": 10
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -356,7 +367,8 @@
                                         "number": 1,
                                         "faces": 10
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -372,7 +384,8 @@
                                         "number": 1,
                                         "faces": 10
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -388,7 +401,8 @@
                                         "number": 1,
                                         "faces": 10
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -404,7 +418,8 @@
                                         "number": 1,
                                         "faces": 10
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -420,7 +435,8 @@
                                         "number": 1,
                                         "faces": 12
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -436,7 +452,8 @@
                                         "number": 1,
                                         "faces": 12
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -452,7 +469,8 @@
                                         "number": 1,
                                         "faces": 12
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -468,7 +486,8 @@
                                         "number": 1,
                                         "faces": 12
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -484,7 +503,8 @@
                                         "number": 1,
                                         "faces": 12
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -596,7 +616,39 @@
                     "entries": [
                         "Not only are you capable of wielding a larger variety of weapons, but you can use it in a more defensive style. Your monk weapons are longbows and any weapon that doesn't have the two-handed, heavy, or special property."
                     ]
-                }
+                },
+                {
+					"type": "inset",
+					"name": "Changes to Unarmed Strikes and the Finesse Property",
+					"entries": [
+						"In this compendium unarmed strikes and the finesse property suffer important changes meant to keep balance in check.",
+                        {
+                            "type": "entries",
+                            "name": "Finesse Property",
+                            "page": 14,
+                            "entries": [
+                                "The property now allows to choose between your Strength or Dexterity modifier only for the attack roll with the weapon, but not for the damage roll. For the damage roll you still have to use your Strength modifier for melee weapon attacks or your Dexterity modifier for ranged weapon attacks."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Unarmed Strikes",
+                            "page": 14,
+                            "entries": [
+                                "Unarmed strikes are now considered to have the finesse and light properties."
+                            ]
+                        }
+					]
+				},
+                {
+					"type": "inset",
+					"name": "Unarmored Defense",
+					"entries": [
+						"Some characters have access to a specialized form of defense called Unarmored Defense. If your character has proficiency with it, your AC equals to 10 + your Dexterity modifier + your ability modifier listed in parenthesis, while you aren't wearing armor. You also lose this benefit if you wield a shield and lack proficiency with it.",
+                        "If you have proficiency in this trait with different abilities, you can only benefit from one at the time.",
+                        "Each ability offers a different interpretation of this trait. For instance, Wisdom allows you to predict attacks and increases your overall awareness of your surroundings; Constitution prevents harm by increasing your studiness; and Charisma makes your presence tangible to others, making them think twice before laying a finger on you."
+					]
+				}
             ]
         },
 		{
@@ -632,9 +684,9 @@
             "page": 3,
             "level": 1,
             "entries": [
-                "At 1st level, you know how to block your senses from the external world, entering a state of absolute focus, called meditation. While in this state you remain motionless and unconscious, and the only action you can take is to awaken yourself from it. Your meditation ends if you take damage or another creature uses its action to reach and awaken you.",
+                "At 1st level, you know how to block your senses from the external world, entering a state of absolute focus, called meditation. While in this state you remain motionless and {@condition unconscious}, and the only action you can take is to awaken yourself from it. Your meditation ends if you take damage or another creature uses its action to reach and awaken you.",
                 "With uninterrupted meditation you can finish a short or long rest in half the time, and gain the same benefits of 8 hours of sleep in 4 hours.",
-                "Starting at 7th level, you're no longer rendered unconscious while meditating, and you can see and hear as normal."
+                "Starting at 7th level, you're no longer rendered {@condition unconscious} while meditating, and you can see and hear as normal."
             ]
         },
 
@@ -659,26 +711,6 @@
             "classSource": "DZC:ANA",
             "page": 1,
             "level": 1,
-			"foundrySystem": {
-				"effects": [
-					{
-						"name": "Unarmored Defense (Wisdom)",
-						"foundryImg": "icons/magic/control/debuff-energy-hold-yellow.webp",
-						"changes": [
-							{
-								"key": "system.attributes.ac.calc",
-								"mode": "OVERRIDE",
-								"value": "custom"
-							},
-							{
-								"key": "system.attributes.ac.formula",
-								"mode": "CUSTOM",
-								"value": "10+@abilities.dex.mod+@abilities.wis.mod"
-							}
-						]
-					}
-				]
-			},
             "entries": [
                 "Some characters have access to a specialized form of defense called Unarmored Defense. If your character has proficiency with it, your AC equals to 10 + your Dexterity modifier + your ability modifier listed in parenthesis, while you aren't wearing armor. You also lose this benefit if you wield a shield and lack proficiency with it.",
 
@@ -703,8 +735,7 @@
                     "name": "Ki Points",
                     "page": 3,
                     "entries": [
-                        "Your access to this energy is represented by a number of ki points. You have an amount of ki points equal to your monk level + your Wisdom modifier, unless that modifier is negative. You regain all expended ki points when you use your meditation to finish a short or long rest.",
-                        "Whenever you gain a level in this class, you can choose one of the ki features you know and replace it with another one that you could learn at that level."
+                        "Your access to this energy is represented by a number of ki points. You have an amount of ki points equal to your monk level + your Wisdom modifier, unless that modifier is negative. You regain 1 + your Wisdom modifier (minimum of 2) ki points if you finish a short rest meditating, and all of them if you finish a long rest with it."
                     ]
                 },
                 {
@@ -755,40 +786,6 @@
             "classSource": "DZC:ANA",
             "page": 4,
             "level": 2,
-            "foundrySystem": {
-                "effects": [
-                    {
-                        "name": "Unarmored Movement",
-                        "changes": [
-                            {
-                                "key": "data.attributes.movement.walk",
-                                "mode": "ADD",
-                                "value": "sign(@attributes.movement.walk) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5)"
-                            },
-                            {
-                                "key": "data.attributes.movement.burrow",
-                                "mode": "ADD",
-                                "value": "sign(@attributes.movement.burrow) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5)"
-                            },
-                            {
-                                "key": "data.attributes.movement.climb",
-                                "mode": "ADD",
-                                "value": "sign(@attributes.movement.climb) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5)"
-                            },
-                            {
-                                "key": "data.attributes.movement.fly",
-                                "mode": "ADD",
-                                "value": "sign(@attributes.movement.fly) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5)"
-                            },
-                            {
-                                "key": "data.attributes.movement.swim",
-                                "mode": "ADD",
-                                "value": "sign(@attributes.movement.swim) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5)"
-                            }
-                        ]
-                    }
-                ]
-            },
             "entries": [
                 "Starting at 2nd level, you gain a bonus to your movement speed, as shown in the Unarmored Movement column of the Monk table. You lose this benefit if you lose the benefits of your Martial Arts."
             ]
@@ -996,7 +993,7 @@
             "page": 4,
             "level": 19,
             "entries": [
-                "Your mastery over your body protects you from physical ailments. Beginning at 9th level, you are immune to all disease and the poisoned condition.",
+                "At 19th level, you can take a breather and recover almost immediatly. At the start of your turn, you can choose to forgo your turn and reaction to regain your energies. If you take no damage and don't fail a saving throw until the start of your next turn, you gain the benefits of a short rest and regain up to 10 spent ki points.",
                 "Once you use this feature, you can't use it again until you finish a long rest."
             ]
         },
@@ -1200,7 +1197,23 @@
             ],
             "entries": [
 				"Before you make an unarmed strike, you can take a -5 penalty to the attack roll. If the attack hits, you gain a bonus to the damage roll equal to one roll of your Martial Arts die + your Wisdom modifier."
-            ]
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "Before making an unarmed strike",
+                "activation.cost": 1,
+                "actionType": "mwak",
+                "attack": {
+                    "bonus": -5,
+                    "flat": false
+                },
+                "damage.parts": [
+                    [
+                        "2d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.str.mod + @abilities.wis.mod",
+                        "bludgeoning"
+                    ]
+                ]
+            }
         },
 
 		{
@@ -1359,9 +1372,9 @@
                 "actionType": "other",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
-                    ],
-                    "thunder"
+                        "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))",
+                        "thunder"
+                    ]
                 ]
             }
         },
@@ -1391,9 +1404,9 @@
                 "damage.parts": [
                     [
                         "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.wis.mod"
-                    ],
-                    "bludgeoning"
-                ]
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Your choice of bludgeoning, piercing, or slashing"
             }
         },
 
@@ -1421,9 +1434,9 @@
                 "actionType": "other",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.wis.mod"
-                    ],
-                    "fire"
+                        "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.wis.mod",
+                        "fire"
+                    ]
                 ]
             }
         },
@@ -1452,9 +1465,9 @@
                 "actionType": "other",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
-                    ],
-                    "cold"
+                        "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))",
+                        "cold"
+                    ]
                 ]
             }
         },
@@ -1476,7 +1489,20 @@
             "entries": [
                 "A line of compressed air 30 feet long and 5 feet wide blasts from you in a direction you choose. Each creature in that area must succeed on a Constitution saving throw or take thunder damage equal to one roll of your Martial Arts die and be pushed up to 10 feet away from you in a direction following the line.",
                 "Unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the feature's effect."
-            ]
+            ],
+		"foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "Spend 1 ki to replace an attack from the Attack action",
+                "actionType": "save",
+			"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))",
+						"thunder"
+					]
+				],
+                "save.ability": "con",
+                "save.scaling": "wis"
+            }
         },
 
         {
@@ -1495,7 +1521,20 @@
             ],
             "entries": [
                 "You hurl a Medium rock against a creature you can see within 30 feet from you. The creature must succeed on a Strength saving throw or take bludgeoning damage equal to one roll of your Martial Arts die and be knocked prone."
-            ]
+            ],
+		"foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "Spend 1 ki to replace an attack from the Attack action",
+                "actionType": "save",
+			"damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))",
+						"bludgeoning"
+					]
+				],
+                "save.ability": "str",
+                "save.scaling": "wis"
+            }
         },
 
         {
@@ -1515,7 +1554,20 @@
             "entries": [
                 "You shoot a fire projectile towards a point you choose that you can see within 30 feet from you. The projectile explodes when it reaches its destination or impacts against a solid surface. Each creature within 5 feet of the point where the projectile explodes must make a Dexterity saving throw, taking fire damage equal to two rolls of your Martial Arts die on a failed save.",
                 "The explosion damages objects in the area that aren't being worn or carried."
-            ]
+            ],
+		"foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "Spend 1 ki to replace an attack from the Attack action",
+                "actionType": "save",
+			"damage.parts": [
+					[
+						"2d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))",
+						"fire"
+					]
+				],
+                "save.ability": "dex",
+                "save.scaling": "wis"
+            }
         },
 
         {
@@ -1534,7 +1586,20 @@
             ],
             "entries": [
                 "A pillar of swirling water appears in a point you can see within 30 feet from you. Each creature in a 10-foot-radius, 15-foot-high cylinder centered on a point within range must make a Strength saving throw. On a failed save, a creature takes cold damage equal to one roll of your Martial Arts die and is pushed 5 feet in any direction you choose."
-            ]
+            ],
+		"foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "Spend 1 ki to replace an attack from the Attack action",
+                "actionType": "save",
+                "damage.parts": [
+					[
+						"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))",
+						"cold"
+					]
+				],
+                "save.ability": "con",
+                "save.scaling": "wis"
+            }
         },
 
         {
@@ -1900,7 +1965,7 @@
             "name": "Delaying Strike",
             "source": "DZC:ANA",
             "page": 11,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 1
@@ -1917,7 +1982,7 @@
             "name": "Extension of Self",
             "source": "DZC:ANA",
             "page": 12,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 1
@@ -1934,7 +1999,7 @@
             "name": "Flurry of Blows",
             "source": "DZC:ANA",
             "page": 12,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 1
@@ -1958,7 +2023,7 @@
             "name": "Heavy Strike",
             "source": "DZC:ANA",
             "page": 12,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 1
@@ -1975,7 +2040,7 @@
             "name": "Pushing Strike",
             "source": "DZC:ANA",
             "page": 12,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 1
@@ -1992,7 +2057,7 @@
             "name": "Strong Arm",
             "source": "DZC:ANA",
             "page": 12,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 1
@@ -2016,7 +2081,7 @@
             "name": "Concussive Strike",
             "source": "DZC:ANA",
             "page": 12,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 1
@@ -2046,7 +2111,7 @@
             "name": "Deadly Precision",
             "source": "DZC:ANA",
             "page": 12,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 1
@@ -2082,7 +2147,7 @@
             "name": "Mighty Fists",
             "source": "DZC:ANA",
             "page": 12,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 1
@@ -2114,7 +2179,7 @@
             "name": "Taunting Strike",
             "source": "DZC:ANA",
             "page": 12,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 1
@@ -2143,7 +2208,7 @@
             "name": "Returning Attack",
             "source": "DZC:ANA",
             "page": 12,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 1
@@ -2153,7 +2218,7 @@
 				"DZC:KF:O"
             ],
             "entries": [
-                "If you use your Deflect Physical Attacks and reduce the damage to 0, you can spend 1 ki point to counter attack as part of the same reaction. If you do so, make a melee attack if the triggering attack was a melee attack, or a ranged attack using the weapon or piece of ammunition you just caught if it was a ranged attack.",
+                "If you use your Deflect Physical Attacks and reduce the damage to 0, you can spend 1 ki point to counter attack as part of the same reaction. If you do so, make a melee weapon attack if the triggering attack was a melee attack, or a ranged attack using the weapon or piece of ammunition you just caught if it was a ranged attack.",
                 "You make the ranged attack with proficiency, regardless of your weapon proficiencies, and the missile counts as a monk weapon for the attack, which has a range of 20/60 feet."
             ],
             "prerequisite": [
@@ -2176,7 +2241,7 @@
             "name": "Restraining Hand",
             "source": "DZC:ANA",
             "page": 12,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 1
@@ -2208,7 +2273,7 @@
             "name": "Stunning Strike",
             "source": "DZC:ANA",
             "page": 12,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 1
@@ -2244,7 +2309,7 @@
             "name": "Legendary Lifter",
             "source": "DZC:ANA",
             "page": 12,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 1
@@ -2276,7 +2341,7 @@
             "name": "Hardened Fists",
             "source": "DZC:ANA",
             "page": 12,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 1
@@ -2308,7 +2373,7 @@
             "name": "Weakening Strike",
             "source": "DZC:ANA",
             "page": 12,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 1
@@ -2337,7 +2402,7 @@
             "name": "Corrected Attack",
             "source": "DZC:ANA",
             "page": 12,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 1
@@ -2366,7 +2431,7 @@
             "name": "Heavy Weight",
             "source": "DZC:ANA",
             "page": 12,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 2
@@ -2398,7 +2463,7 @@
             "name": "Afterblast",
             "source": "DZC:ANA",
             "page": 12,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 2
@@ -2430,7 +2495,7 @@
             "name": "Deflect Physical Attacks",
             "source": "DZC:ANA",
             "page": 12,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 1
@@ -2450,17 +2515,774 @@
                 "actionType": "healing",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.dex.mod + @classes.monk-rework.levels"
-                    ],
-                    "hp"
+                        "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.dex.mod + @classes.monk-rework.levels",
+                        "healing"
+                    ]
                 ]
             }
+        },
+        {
+            "name": "Ki Coat",
+            "source": "DZC:ANA",
+            "page": 12,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:D"
+            ],
+            "entries": [
+                "You can spend 1 ki point to cast {@spell mage armor} on yourself. When you cast it in this way, it lasts for 1 hour and you can use your Wisdom instead of Dexterity to calculate your AC."
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": [
+                            "mage armor"
+                        ]
+                    },
+                    "ability": "wis"
+                }
+            ]
+        },
+        {
+            "name": "Patient Defense",
+            "source": "DZC:ANA",
+            "page": 12,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:D"
+            ],
+            "entries": [
+                "As a bonus action, you can spend 1 ki point to take the Dodge action."
+            ]
+        },
+        {
+            "name": "Keep the Distance",
+            "source": "DZC:ANA",
+            "page": 12,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:D"
+            ],
+            "entries": [
+                "If a creature attempts to enter your reach, you can spend 1 ki point to make an attack against it as a reaction using a weapon. If the attack hits, instead of dealing damage, the creature's speed is reduced by 15 feet until the end of its turn."
+            ],
+            "foundrySystem": {
+                "activation.type": "reaction",
+                "activation.condition": "When a creature attempts to enter your reach",
+                "activation.cost": 1,
+                "actionType": "mwak"
+            },
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Weapon Style feature: Monk Weapon Mastery"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Spiritual Shield",
+            "source": "DZC:ANA",
+            "page": 12,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:D"
+            ],
+            "entries": [
+                "When you finish a short or long rest, you can spend 1 ki point to gain a number of temporary hit points equal to one roll of your Martial Arts die + your Wisdom modifier. These temporary hit points last for 1 hour."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you finish a short or long rest",
+                "activation.cost": 1,
+                "actionType": "heal",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.wis.mod",
+                        "temphp"
+                    ]
+                ]
+            },
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Weapon Style feature: Monk Weapon Mastery"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Tranquility",
+            "source": "DZC:ANA",
+            "page": 13,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:D"
+            ],
+            "entries": [
+                "You can spend 1 ki point to cast {@spell sanctuary} on yourself."
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": [
+                            "sanctuary"
+                        ]
+                    },
+                    "ability": "wis"
+                }
+            ]
+        },
+        {
+            "name": "After Image",
+            "source": "DZC:ANA",
+            "page": 13,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 2
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:D"
+            ],
+            "entries": [
+                "You can spend 2 ki points to cast {@spell mirror image}."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": [
+                            "mirror image"
+                        ]
+                    },
+                    "ability": "wis"
+                }
+            ]
+        },
+        {
+            "name": "Footwork",
+            "source": "DZC:ANA",
+            "page": 13,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:D"
+            ],
+            "entries": [
+                "When a creature misses you with an attack, you can spend 1 ki as a reaction to move up to 15 feet away from the creature. This movement doesn't provoke opportunity attacks."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Double Parry",
+            "source": "DZC:ANA",
+            "page": 13,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:D"
+            ],
+            "entries": [
+                "If you use your Embracing Branch, you can spend 1 ki point to use it an additional time without a reaction before the start of your next turn."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Weapon Style feature: Embracing Branch"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Blocking Stance",
+            "source": "DZC:ANA",
+            "page": 13,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:D"
+            ],
+            "entries": [
+                "When you use your {@optfeature Returning Guard|DZC:ANA}, you can spend 1 ki point to maintain its benefit against the next two attacks, instead of one."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Weapon Style feature: Returning Guard"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Deflect Magical Attacks",
+            "source": "DZC:ANA",
+            "page": 13,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 2
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:D"
+            ],
+            "entries": [
+                "When you are hit by a spell attack, you can use your {@optfeature Deflect Physical Attacks|DZC:ANA} against the attack by spending 1 additional ki point. When you do so, the following changes are applied:",
+                {
+					"type": "list",
+					"items": [
+						"You use Wisdom instead of Dexterity to reduce the damage you take.",
+						"The restrictions on the size of the damaging element apply as normal.",
+                        "You can catch a magical projectile as if it were a weapon or ammunition, provided you meet the conditions.",
+                        "If you use Returning Attack with the magical projectile you just caught, the attack becomes a ranged spell attack, which has a range of 60 feet. You are proficient with it, and you add your Wisdom modifier to its attack and damage rolls."
+					]
+                }
+            ],
+            "foundrySystem": {
+                "activation.type": "reaction",
+                "activation.condition": "When you are hit by a weapon attack",
+                "activation.cost": 1,
+                "actionType": "healing",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.wis.mod + @classes.monk-rework.levels",
+                        "healing"
+                    ]
+                ]
+            },
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Deflect Physical Attacks ki feature"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Hardened Body",
+            "source": "DZC:ANA",
+            "page": 13,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 2
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:D"
+            ],
+            "entries": [
+                "When you take damage, you can spend 2 ki points as a reaction to halve the damage you take from the triggering effect."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Spiritual Shield ki feature"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Resistive Force",
+            "source": "DZC:ANA",
+            "page": 13,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 2
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:D"
+            ],
+            "entries": [
+                "Whenever you make a saving throw and fail, you can spend 2 ki points to reroll it and take the second result."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Diamond Soul",
+            "source": "DZC:ANA",
+            "page": 13,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 2
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:D"
+            ],
+            "entries": [
+                "When you make a saving throw, you can spend 2 ki points to add your Wisdom modifier to the roll and halve the damage you take from the triggering effect, if any."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Perfect Defense",
+            "source": "DZC:ANA",
+            "page": 13,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 5
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:D"
+            ],
+            "entries": [
+                "As an action, you can spend 5 ki points to become resistant to all damage for 1 minute."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 17,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Hardened Body ki feature"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Protective Tree",
+            "source": "DZC:ANA",
+            "page": 13,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 2
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:D"
+            ],
+            "entries": [
+                "You can spend 2 ki points as a bonus action to enter a defensive stance while wielding a monk weapon until the start of your next turn. For the duration, the first time any hostile creature you can see attempts to enter your reach on its turn has its speed reduced by 15 feet until the end of its turn. Furthermore, any friendly creature you can see within 5 feet from you (including you) has a +2 bonus to its AC. However, your speed becomes 0 for the duration."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 17,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "three or more Weapon Style features"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Body Training",
+            "source": "DZC:ANA",
+            "page": 13,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "When you make an Athletics, Acrobatics, or Stealth check, you can spend 1 ki point to add one roll your Martial Arts die to the roll."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you make an Athletics, Acrobatics, or Stealth check",
+                "activation.cost": 1,
+                "actionType": "other",
+                "formula": [
+                    "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
+                ]
+            }
+        },
+        {
+            "name": "Combat Awareness",
+            "source": "DZC:ANA",
+            "page": 13,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "When you make an initiative roll, you can spend 1 ki point to add one roll of your Martial Arts die to the roll."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you roll initiative",
+                "activation.cost": 1,
+                "actionType": "other",
+                "formula": [
+                    "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
+                ]
+            }
+        },
+        {
+            "name": "Ear of the Ancients",
+            "source": "DZC:ANA",
+            "page": 13,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "You can spend 1 ki point to cast {@spell comprehend languages}."
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": [
+                            "comprehend languages"
+                        ]
+                    },
+                    "ability": "wis"
+                }
+            ]
+        },
+        {
+            "name": "Extra Speed",
+            "source": "DZC:ANA",
+            "page": 13,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "At the start of your turn, you can spend 1 ki point to double the movement speed bonus from your {@optfeature Unarmored Movement|DZC:ANA} feature for 10 minutes and you ignore difficult terrain for the duration. This benefit ends early if you are incapacitated."
+            ]
+        },
+        {
+            "name": "Mental Training",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "When you make an Insight, Medicine, or Perception check, you can spend 1 ki point to add one roll your Martial Arts die to the roll."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you make an Insight, Medicine, or Perception check",
+                "activation.cost": 1,
+                "actionType": "other",
+                "formula": [
+                    "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
+                ]
+            }
+        },
+        {
+            "name": "Slow Fall",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "You can spend 1 ki point as a reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level."
+            ],
+            "foundrySystem": {
+                "activation.type": "reaction",
+                "activation.condition": "When you fall",
+                "activation.cost": 1,
+                "actionType": "other",
+                "formula": [
+                    "5*@classes.monk-rework.levels"
+                ]
+            }
+        },
+        {
+            "name": "Spectacular Training",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "When you make an Intimidation, Performance, or Persuasion check, you can spend 1 ki point to add one roll your Martial Arts die to the roll."
+            ],
+            "foundrySystem": {
+                "activation.type": "reaction",
+                "activation.condition": "When you make an Intimidation, Performance, or Persuasion check",
+                "activation.cost": 1,
+                "actionType": "other",
+                "formula": [
+                    "5*@classes.monk-rework.levels"
+                ]
+            }
+        },
+        {
+            "name": "Step of the Wind",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "As a bonus action, you can spend 1 ki point to take the Dash or Disengage action and double your jump distance for the turn."
+            ]
+        },
+        {
+            "name": "Blinding Speed",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "Once on your turn, when you take the Dash or Disengage action on your turn, you can spend 1 ki point to double your movement speed for the turn."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Step of the Wind ki feature"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Break Bindings",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "At the start of your turn, you can spend 1 ki point to end one effect on yourself that is causing you to be {@condition grappled} or {@condition restrained}. When you do so, your movement speed is halved until the end of your turn."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Stillness of Mind",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "At the start of your turn, you can spend 1 ki point to end one effect on yourself that is causing you to be {@condition charmed} or {@condition frightened}."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
         },
         {
             "name": "Tongue of the Sun and Moon",
             "source": "DZC:ANA",
             "page": 14,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
                 "name": "Ki",
                 "amount": 3
@@ -2492,6 +3314,201 @@
                     "innate": {
                         "_": [
                             "tongues"
+                        ]
+                    },
+                    "ability": "wis"
+                }
+            ]
+        },
+        {
+            "name": "Agile Feet",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "You gain the ability to move along vertical surfaces, across liquids and surfaces that don't support your weight on your turn without falling during the move.",
+                "You can spend 1 ki point whenever you stop moving to not fall off vertical surfaces, sink in liquid, or fall from surfaces that don't support your weight. This benefit lasts until the end of your next turn or until you are {@condition incapacitated}."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Healthy Body",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 2
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "When you finish a short or long rest, you can spend 2 ki points to reduce your {@condition exhaustion} level by one."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Light Reflection",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 4
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "You can distort the light around you to hide your pressence. As an action, you can spend 4 ki points to become {@condition invisible} for 1 minute."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Third Sense",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 2
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "As a bonus action, you can spend 2 ki points to impose the {@condition blinded} and {@condition deafened} condition on yourself. For the duration, you gain a tremorsense with a range of 120 feet. Creatures and objects you can detect with this special sense are considered to be perfectly visible for you. You can end this effect early on your turn as a bonus action."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Astral Sense",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 6
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "You can spend 6 ki points to cast {@spell true seeing} on yourself."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": [
+                            "true seeing"
+                        ]
+                    },
+                    "ability": "wis"
+                }
+            ]
+        },
+        {
+            "name": "Emptry Body",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 8
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "You can spend 8 ki points to cast {@spell astral projection} on yourself."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 17,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": [
+                            "astral projection"
                         ]
                     },
                     "ability": "wis"
@@ -2537,6 +3554,7 @@
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"page": 4,
+			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
 			"subclassFeatures": [
 				"Way of the Inner Strength|Monk Rework|DZC:ANA|Inner Strength|DZC:ANA|3",
 				"Wholeness of Body|Monk Rework|DZC:ANA|Inner Strength|DZC:ANA|6",
@@ -2545,13 +3563,57 @@
 			]
 		},
         {
+			"name": "Way of the Shadows",
+			"shortName": "Shadows",
+			"source": "DZC:ANA",
+			"className": "Monk Rework",
+			"classSource": "DZC:ANA",
+			"page": 5,
+			"foundryImg": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
+			"subclassFeatures": [
+				"Way of the Shadows|Monk Rework|DZC:ANA|Shadows|DZC:ANA|3",
+				"Shadow Step|Monk Rework|DZC:ANA|Shadows|DZC:ANA|6",
+				"Cloak of Shadows|Monk Rework|DZC:ANA|Shadows|DZC:ANA|11",
+				"Opportunist|Monk Rework|DZC:ANA|Shadows|DZC:ANA|17"
+			],
+            "additionalSpells": [
+				{
+					"known": {
+						"3": [
+                            "message#c",
+							"minor illusion#c"
+						]
+					},
+					"innate": {
+						"3": {
+							"resource": {
+                                "1": [
+                                    "fog cloud",
+                                    "silent image",
+                                    "jump"
+                                ],
+								"2": [
+									"darkness",
+									"darkvision",
+									"pass without trace",
+									"silence"
+								]
+							}
+						}
+					},
+					"resourceName": "Ki",
+					"ability": "wis"
+				}
+			]
+		},
+        {
 			"name": "Way of the Elements",
-            "foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp",
 			"shortName": "Elements",
 			"source": "DZC:ANA",
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"page": 6,
+			"foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp",
 			"subclassFeatures": [
 				"Way of the Elements|Monk Rework|DZC:ANA|Elements|DZC:ANA|3",
 				"Primal Stances|Monk Rework|DZC:ANA|Elements|DZC:ANA|6",
@@ -2565,7 +3627,6 @@
 			"name": "Way of the Inner Strength",
 			"source": "DZC:ANA",
 			"page": 4,
-			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Inner Strength",
@@ -2668,12 +3729,100 @@
 				"By reaching deep within yourself, your soul blossomed to its maximum potential. At 17th level, you can now add one ki feature with a 5th level restriction and one with a 9th level restriction to your Specialized Ki Features."
 			]
 		},
-        
+
+        {
+			"name": "Way of the Shadows",
+			"source": "DZC:ANA",
+			"page": 5,
+			"className": "Monk Rework",
+			"classSource": "DZC:ANA",
+			"subclassShortName": "Shadows",
+			"subclassSource": "DZC:ANA",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Monks of the Way of the Shadows follow a tradition that values stealth and subterfuge. These monks might be called ninjas or shadowdancers, and they serve as spies and assassins.",
+
+				"Sometimes the members of a ninja monastery are family members, forming a clan sworn to secrecy about their arts and missions. Other monasteries are more like thieves' guilds, hiring out their services to nobles, rich merchants, or anyone else who can pay their fees.",
+
+                "Regardless of their methods, the heads of these monasteries expect from their students unquestioning obedience, to show no scruple on their actions, and to carry their missions without failure. Otherwise, they won't hesitate to deliver severe punishment.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Shadow Arts|Monk Rework|DZC:ANA|Shadows|DZC:ANA|3"
+				}
+			]
+		},
+
+		{
+			"name": "Shadow Arts",
+			"source": "DZC:ANA",
+			"page": 5,
+			"foundryImg": "icons/magic/control/silhouette-aura-energy.webp",
+			"className": "Monk Rework",
+			"classSource": "DZC:ANA",
+			"subclassShortName": "Shadows",
+			"subclassSource": "DZC:ANA",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"With your training you are capable of replicating certain spells. At 3rd level, you gain the {@spell message} and {@spell minor illusion} cantrips if you don't already know them. In addition, you can spend 1 ki point to cast {@spell fog cloud}, {@spell silent image}, or {@spell jump}, and you can spend 2 ki points to cast {@spell darkness}, {@spell darkvision}, {@spell pass without trace}, or {@spell silence}.",
+
+				"When you cast {@spell silent image} in this way, you can only use it to create an image of yourself, and you can only cast {@spell jump} on yourself in this way."
+			]
+		},
+
+		{
+			"name": "Shadow Step",
+			"source": "DZC:ANA",
+			"page": 5,
+			"foundryImg": "icons/magic/control/debuff-energy-hold-pink.webp",
+			"className": "Monk Rework",
+			"classSource": "DZC:ANA",
+			"subclassShortName": "Shadows",
+			"subclassSource": "DZC:ANA",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first attack you make on that turn."
+			]
+		},
+
+		{
+			"name": "Cloak of Shadows",
+			"source": "DZC:ANA",
+			"page": 5,
+			"foundryImg": "icons/magic/perception/silhouette-stealth-shadow.webp",
+			"className": "Monk Rework",
+			"classSource": "DZC:ANA",
+			"subclassShortName": "Shadows",
+			"subclassSource": "DZC:ANA",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"At 11th level, you learn how to become one with the shadows. You can spend 2 ki points when you use your Shadow Step to become {@condition invisible}. You remain {@condition invisible} until you make an attack, cast a spell, or until you get into an area of bright light."
+			]
+		},
+
+		{
+			"name": "Opportunist",
+			"source": "DZC:ANA",
+			"page": 5,
+			"foundryImg": "icons/magic/light/projectile-bolts-salvo-yellow.webp",
+			"className": "Monk Rework",
+			"classSource": "DZC:ANA",
+			"subclassShortName": "Shadows",
+			"subclassSource": "DZC:ANA",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"At 17th level, you can exploit a creature's momentary distraction when it is hit by an attack. Whenever a creature within 5 feet of you is hit by an attack made by a creature other than you, you can use your reaction to make an attack against that creature."
+			]
+		},
+
         {
 			"name": "Way of the Elements",
 			"source": "DZC:ANA",
 			"page": 6,
-			"foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp",
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Elements",
@@ -2681,9 +3830,9 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Monks of the Way of the Inner Strength are dedicated to cultivating the true potential of ki. They take on a path of diligent meditation and self discovery, searching for the mysteries that dwelve deep within them, rather than those of the universe around them.",
+				"This tradition teaches you to harness the energy of the four elements in ways that improve your combat prowess. Bend the forces of nature to invoke harmful effects on your enemies, or to surpass the mortal limits of your body. Some members of this tradition dedicate themselves to a single element, others explore different paths with them, and a few can weave the four elements together.",
 
-				"More often than not, practicioners of this tradition isolate themselves for long periods of time, disconnecting their terrenal senses in order to heighten their spiritual eye. Only a few can endure this journey, and even less monks can achieve the state of true enlightenment.",
+				"Each element is often associated with an aspect of an individual's personality or ideology. Air is associated with playfulness, peace, and solving problems from different angles. Earth with toughness, stability, and stubborness. Fire with anger, passion, and direct confrontation. Water with sadness, kindness, and adaptability.",
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Elemental Arts|Monk Rework|DZC:ANA|Elements|DZC:ANA|3"
@@ -2981,7 +4130,7 @@
 			"name": "Elemental Mastery",
 			"source": "DZC:ANA",
 			"page": 7,
-			"foundryImg": "icons/magic/nature/explosion-flame-blue",
+			"foundryImg": "icons/magic/nature/explosion-flame-blue.webp",
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Elements",
@@ -3055,14 +4204,110 @@
 	],
 
 	"foundryClassFeature": [
-		{
+        {
+            "name": "Martial Arts",
+			"source": "DZC:ANA",
+			"className": "Monk Rework",
+			"classSource": "DZC:ANA",
+			"level": 1,
+			"subEntities": {
+				"item": [
+					{
+						"name": "Unarmed Strike (Monk)",
+						"source": "DZC:ANA",
+						"page": 1,
+						"type": "M",
+						"rarity": "none",
+						"weaponCategory": "simple",
+						"foundrySystem": {
+							"equipped": true,
+							"damage.parts": [
+								[
+									"1d(4 + ceil((@classes.monk-levels.levels + 2) / 6) * 2) + @abilities.str.mod",
+									"bludgeoning"
+								]
+							],
+                            "ability": "default",
+							"properties": [
+                                "fin",
+                                "lgt"
+                            ]
+						}
+					}
+				]
+			}
+		},
+        {
+            "name": "Unarmored Defense",
+			"source": "DZC:ANA",
+			"className": "Monk Rework",
+			"classSource": "DZC:ANA",
+			"level": 1,
+            "effects": [
+                {
+					"name": "Unarmored Defense (Wisdom)",
+					"changes": [
+						{
+							"key": "system.attributes.ac.calc",
+							"mode": "OVERRIDE",
+							"value": "custom"
+						},
+						{
+							"key": "system.attributes.ac.formula",
+							"mode": "CUSTOM",
+							"value": "10+@abilities.dex.mod+@abilities.wis.mod"
+						}
+					]
+				}
+			]
+		},
+        {
+            "name": "Unarmored Movement",
+			"source": "DZC:ANA",
+			"className": "Monk Rework",
+			"classSource": "DZC:ANA",
+			"level": 2,
+            "effects": [
+                {
+					"name": "Unarmored Movement",
+					"changes": [
+                        {
+                            "key": "system.attributes.movement.walk",
+                            "mode": "ADD",
+                            "value": "+ (sign(@attributes.movement.walk) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5))"
+                        },
+                        {
+                            "key": "system.attributes.movement.burrow",
+                            "mode": "ADD",
+                            "value": "+ (sign(@attributes.movement.burrow) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5))"
+                        },
+                        {
+                            "key": "system.attributes.movement.climb",
+                            "mode": "ADD",
+                            "value": "+ (sign(@attributes.movement.climb) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5))"
+                        },
+                        {
+                            "key": "system.attributes.movement.fly",
+                            "mode": "ADD",
+                            "value": "+ (sign(@attributes.movement.fly) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5))"
+                        },
+                        {
+                            "key": "system.attributes.movement.swim",
+                            "mode": "ADD",
+                            "value": "+ (sign(@attributes.movement.swim) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5))"
+                        }
+                    ]
+				}
+			]
+		},
+        {
 			"name": "Ki",
 			"source": "DZC:ANA",
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"level": 2,
 			"system": {
-				"uses.per": "sr",
+				"uses.per": "lr",
 				"uses.max": "@classes.monk-rework.levels + @abilities.wis.mod"
 			}
 		}
@@ -3127,7 +4372,14 @@
 							"name": "Quick Build",
 							"page": 2,
 							"entries": [
-								"You can make a monk quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. Second, choose the {@background hermit} background. Take the Unarmed Style and when you learn ki features, choose {@optfeature Flurry of Blows|DZC}, {@optfeature Patient Defense|DZC}, and {@optfeature Step of the Wind|DZC}."
+								"You can make a monk quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. Second, choose the {@background hermit} background. Take the Unarmed Style and when you learn ki features, choose {@optfeature Flurry of Blows|DZC:ANA}, {@optfeature Patient Defense|DZC:ANA}, and {@optfeature Step of the Wind|DZC:ANA}.",
+                                {
+                                    "type": "inset",
+                                    "name": "Can I add this Bonus?",
+                                    "entries": [
+                                        "Sometimes an ability, feature, or spell allows you to add a bonus to an attack roll, ability check, or saving throw, such as the bard's Bardic Inspiration, a war cleric's  Channel Divinity: Guided Strike, the *bless* spell, the martial technique boost offensive, and many others. Other abilities allow you to reroll the die for those die rolls, such as the drunken master monk's Drunkard's Luck. There is another type of abilities, much rarer than the others, ones that allow you to add special effects to your actions, reactions, die rolls, etc., such as the monk's Evasion ki feature. These abilities have in common the lack of key words for its trigger, such as hit, succeed, miss, or fail, which is why you can choose to use these after seeing the roll, but before the DM says wether the roll succeeds or fails."
+                                    ]
+                                }
 							]
 						}
 					]
